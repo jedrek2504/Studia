@@ -1,0 +1,6 @@
+C:/Users/jedre/OneDrive - Politechnika Łódzka/Pulpit/MKAR_2020_Statek/StatekMKar2020/out/build/x64-Debug/CMakeFiles/Project.dir
+C:/Users/jedre/OneDrive - Politechnika Łódzka/Pulpit/MKAR_2020_Statek/StatekMKar2020/out/build/x64-Debug/CMakeFiles/TestProject.dir
+C:/Users/jedre/OneDrive - Politechnika Łódzka/Pulpit/MKAR_2020_Statek/StatekMKar2020/out/build/x64-Debug/CMakeFiles/check.dir
+C:/Users/jedre/OneDrive - Politechnika Łódzka/Pulpit/MKAR_2020_Statek/StatekMKar2020/out/build/x64-Debug/CMakeFiles/test.dir
+C:/Users/jedre/OneDrive - Politechnika Łódzka/Pulpit/MKAR_2020_Statek/StatekMKar2020/out/build/x64-Debug/CMakeFiles/edit_cache.dir
+C:/Users/jedre/OneDrive - Politechnika Łódzka/Pulpit/MKAR_2020_Statek/StatekMKar2020/out/build/x64-Debug/CMakeFiles/rebuild_cache.dir

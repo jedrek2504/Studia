@@ -1,0 +1,62 @@
+[
+{
+  "directory": "/home/student/CLionProjects/KOLOSY/starty same/RackMKar2019/cmake-build-debug",
+  "command": "/usr/bin/g++  -I\"/home/student/CLionProjects/KOLOSY/starty same/RackMKar2019/include\" -g -std=gnu++11 -o CMakeFiles/Project.dir/src/Polka.cpp.o -c \"/home/student/CLionProjects/KOLOSY/starty same/RackMKar2019/src/Polka.cpp\"",
+  "file": "/home/student/CLionProjects/KOLOSY/starty same/RackMKar2019/src/Polka.cpp"
+},
+{
+  "directory": "/home/student/CLionProjects/KOLOSY/starty same/RackMKar2019/cmake-build-debug",
+  "command": "/usr/bin/g++  -I\"/home/student/CLionProjects/KOLOSY/starty same/RackMKar2019/include\" -g -std=gnu++11 -o CMakeFiles/Project.dir/src/Serwer.cpp.o -c \"/home/student/CLionProjects/KOLOSY/starty same/RackMKar2019/src/Serwer.cpp\"",
+  "file": "/home/student/CLionProjects/KOLOSY/starty same/RackMKar2019/src/Serwer.cpp"
+},
+{
+  "directory": "/home/student/CLionProjects/KOLOSY/starty same/RackMKar2019/cmake-build-debug",
+  "command": "/usr/bin/g++  -I\"/home/student/CLionProjects/KOLOSY/starty same/RackMKar2019/include\" -g -std=gnu++11 -o CMakeFiles/Project.dir/src/Macierz.cpp.o -c \"/home/student/CLionProjects/KOLOSY/starty same/RackMKar2019/src/Macierz.cpp\"",
+  "file": "/home/student/CLionProjects/KOLOSY/starty same/RackMKar2019/src/Macierz.cpp"
+},
+{
+  "directory": "/home/student/CLionProjects/KOLOSY/starty same/RackMKar2019/cmake-build-debug",
+  "command": "/usr/bin/g++  -I\"/home/student/CLionProjects/KOLOSY/starty same/RackMKar2019/include\" -g -std=gnu++11 -o CMakeFiles/Project.dir/src/Rack.cpp.o -c \"/home/student/CLionProjects/KOLOSY/starty same/RackMKar2019/src/Rack.cpp\"",
+  "file": "/home/student/CLionProjects/KOLOSY/starty same/RackMKar2019/src/Rack.cpp"
+},
+{
+  "directory": "/home/student/CLionProjects/KOLOSY/starty same/RackMKar2019/cmake-build-debug",
+  "command": "/usr/bin/g++  -I\"/home/student/CLionProjects/KOLOSY/starty same/RackMKar2019/include\" -g -std=gnu++11 -o CMakeFiles/Project.dir/src/main.cpp.o -c \"/home/student/CLionProjects/KOLOSY/starty same/RackMKar2019/src/main.cpp\"",
+  "file": "/home/student/CLionProjects/KOLOSY/starty same/RackMKar2019/src/main.cpp"
+},
+{
+  "directory": "/home/student/CLionProjects/KOLOSY/starty same/RackMKar2019/cmake-build-debug",
+  "command": "/usr/bin/g++  -I\"/home/student/CLionProjects/KOLOSY/starty same/RackMKar2019/include\" -g -std=gnu++11 -o CMakeFiles/TestProject.dir/test/master.cpp.o -c \"/home/student/CLionProjects/KOLOSY/starty same/RackMKar2019/test/master.cpp\"",
+  "file": "/home/student/CLionProjects/KOLOSY/starty same/RackMKar2019/test/master.cpp"
+},
+{
+  "directory": "/home/student/CLionProjects/KOLOSY/starty same/RackMKar2019/cmake-build-debug",
+  "command": "/usr/bin/g++  -I\"/home/student/CLionProjects/KOLOSY/starty same/RackMKar2019/include\" -g -std=gnu++11 -o CMakeFiles/TestProject.dir/test/RackTest.cpp.o -c \"/home/student/CLionProjects/KOLOSY/starty same/RackMKar2019/test/RackTest.cpp\"",
+  "file": "/home/student/CLionProjects/KOLOSY/starty same/RackMKar2019/test/RackTest.cpp"
+},
+{
+  "directory": "/home/student/CLionProjects/KOLOSY/starty same/RackMKar2019/cmake-build-debug",
+  "command": "/usr/bin/g++  -I\"/home/student/CLionProjects/KOLOSY/starty same/RackMKar2019/include\" -g -std=gnu++11 -o CMakeFiles/TestProject.dir/test/BasicModelTest.cpp.o -c \"/home/student/CLionProjects/KOLOSY/starty same/RackMKar2019/test/BasicModelTest.cpp\"",
+  "file": "/home/student/CLionProjects/KOLOSY/starty same/RackMKar2019/test/BasicModelTest.cpp"
+},
+{
+  "directory": "/home/student/CLionProjects/KOLOSY/starty same/RackMKar2019/cmake-build-debug",
+  "command": "/usr/bin/g++  -I\"/home/student/CLionProjects/KOLOSY/starty same/RackMKar2019/include\" -g -std=gnu++11 -o CMakeFiles/TestProject.dir/src/Polka.cpp.o -c \"/home/student/CLionProjects/KOLOSY/starty same/RackMKar2019/src/Polka.cpp\"",
+  "file": "/home/student/CLionProjects/KOLOSY/starty same/RackMKar2019/src/Polka.cpp"
+},
+{
+  "directory": "/home/student/CLionProjects/KOLOSY/starty same/RackMKar2019/cmake-build-debug",
+  "command": "/usr/bin/g++  -I\"/home/student/CLionProjects/KOLOSY/starty same/RackMKar2019/include\" -g -std=gnu++11 -o CMakeFiles/TestProject.dir/src/Serwer.cpp.o -c \"/home/student/CLionProjects/KOLOSY/starty same/RackMKar2019/src/Serwer.cpp\"",
+  "file": "/home/student/CLionProjects/KOLOSY/starty same/RackMKar2019/src/Serwer.cpp"
+},
+{
+  "directory": "/home/student/CLionProjects/KOLOSY/starty same/RackMKar2019/cmake-build-debug",
+  "command": "/usr/bin/g++  -I\"/home/student/CLionProjects/KOLOSY/starty same/RackMKar2019/include\" -g -std=gnu++11 -o CMakeFiles/TestProject.dir/src/Macierz.cpp.o -c \"/home/student/CLionProjects/KOLOSY/starty same/RackMKar2019/src/Macierz.cpp\"",
+  "file": "/home/student/CLionProjects/KOLOSY/starty same/RackMKar2019/src/Macierz.cpp"
+},
+{
+  "directory": "/home/student/CLionProjects/KOLOSY/starty same/RackMKar2019/cmake-build-debug",
+  "command": "/usr/bin/g++  -I\"/home/student/CLionProjects/KOLOSY/starty same/RackMKar2019/include\" -g -std=gnu++11 -o CMakeFiles/TestProject.dir/src/Rack.cpp.o -c \"/home/student/CLionProjects/KOLOSY/starty same/RackMKar2019/src/Rack.cpp\"",
+  "file": "/home/student/CLionProjects/KOLOSY/starty same/RackMKar2019/src/Rack.cpp"
+}
+]
