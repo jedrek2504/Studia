@@ -1,1 +1,0 @@
-/usr/bin/g++  -g3 -gdwarf-4   CMakeFiles/LibraryTest.dir/__/tests/ClientTest.cpp.o CMakeFiles/LibraryTest.dir/__/tests/AddressTest.cpp.o CMakeFiles/LibraryTest.dir/__/tests/VehicleTest.cpp.o CMakeFiles/LibraryTest.dir/__/tests/RentTest.cpp.o CMakeFiles/LibraryTest.dir/__/tests/master.cpp.o  -o LibraryTest libLibrary.a /usr/lib/x86_64-linux-gnu/libboost_unit_test_framework.so 
