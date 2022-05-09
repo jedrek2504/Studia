@@ -1,0 +1,141 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"childIndexes" : 
+					[
+						1,
+						2
+					],
+					"jsonFile" : "directory-.-Debug-f5ebdc15457944623624.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.4"
+					},
+					"projectIndex" : 0,
+					"source" : "."
+				},
+				{
+					"build" : "program",
+					"jsonFile" : "directory-program-Debug-240305aefc86158674c9.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.4"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 1,
+					"source" : "program",
+					"targetIndexes" : 
+					[
+						2
+					]
+				},
+				{
+					"build" : "library",
+					"jsonFile" : "directory-library-Debug-6240a94a5ba61b697b6e.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.4"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 2,
+					"source" : "library",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						3
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"childIndexes" : 
+					[
+						1,
+						2
+					],
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "CarRental"
+				},
+				{
+					"directoryIndexes" : 
+					[
+						1
+					],
+					"name" : "Program",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						2
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						2
+					],
+					"name" : "Library",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						3
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 2,
+					"id" : "Library::@25993c7f548492bbc626",
+					"jsonFile" : "target-Library-Debug-d3deaf4bcb64e7ac144b.json",
+					"name" : "Library",
+					"projectIndex" : 2
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "LibraryTest::@25993c7f548492bbc626",
+					"jsonFile" : "target-LibraryTest-Debug-81fc8bf00819c0564981.json",
+					"name" : "LibraryTest",
+					"projectIndex" : 2
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "Program::@2ccacb0f417df79f0f19",
+					"jsonFile" : "target-Program-Debug-e3919c22ce414db701cc.json",
+					"name" : "Program",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "check::@25993c7f548492bbc626",
+					"jsonFile" : "target-check-Debug-c26f09f25ce4e251c3ba.json",
+					"name" : "check",
+					"projectIndex" : 2
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/student/gitrepo/mkac_wt_1400_02/kostyk/Workshop/CarRental/cmake-build-debug",
+		"source" : "/home/student/gitrepo/mkac_wt_1400_02/kostyk/Workshop/CarRental"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 3
+	}
+}
