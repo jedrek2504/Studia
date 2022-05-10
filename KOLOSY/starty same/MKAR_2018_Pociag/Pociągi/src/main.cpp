@@ -8,24 +8,13 @@ using namespace std;
 int main() {
     Wagon_ptr towarowy(new Towarowy(100,30));
     Wagon_ptr pasazerski (new Pasazerski(20, 60));
+    Pasazerski_ptr pasazerski2(new Pasazerski(81, 40)); //nie powinien sie dodac yo
     Pociag_ptr pociag(new Pociag(200));
     pociag->dodajWagon(towarowy);
     pociag->dodajWagon(pasazerski);
-    std::cout << pociag->toString();
-//    std::cout <<"                                         ______\n"
-//                "                                          .-\"\"\"\".._'.       _,##\n"
-//                "                                   _..__ |.-\"\"\"-.|  |   _,##'`-._\n"
-//                "                                  (_____)||_____||  |_,##'`-._,##'`\n"
-//                "                                  _|   |.;-\"\"-.  |  |#'`-._,##'`\n"
-//                "                               _.;_ `--' `\\    \\ |.'`\\._,##'`\n"
-//                "                              /.-.\\ `\\     |.-\";.`_, |##'`\n"
-//                "                              |\\__/   | _..;__  |'-' /\n"
-//                "                              '.____.'_.-`)\\--' /'-'`\n"
-//                "                               //||\\\\(_.-'_,'-'`\n"
-//                "                             (`-...-')_,##'`\n"
-//                "                           _,##`-..,-;##`\n"
-//                "                       _,##'`-._,##'`\n"
-//                "                    _,##'`-._,##'`\n"
-//                "                      `-._,##'`";
+    pociag->dodajWagon(pasazerski2);
+
+    cout<<pociag->toString();
+
     return EXIT_SUCCESS;
 }

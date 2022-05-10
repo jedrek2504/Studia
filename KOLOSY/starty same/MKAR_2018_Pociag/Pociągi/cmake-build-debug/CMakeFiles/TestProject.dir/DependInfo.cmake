@@ -8,6 +8,10 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
+  "/home/student/Studia/KOLOSY/starty same/MKAR_2018_Pociag/Pociągi/src/Pasazerski.cpp" "CMakeFiles/TestProject.dir/src/Pasazerski.cpp.o" "gcc" "CMakeFiles/TestProject.dir/src/Pasazerski.cpp.o.d"
+  "/home/student/Studia/KOLOSY/starty same/MKAR_2018_Pociag/Pociągi/src/Pociag.cpp" "CMakeFiles/TestProject.dir/src/Pociag.cpp.o" "gcc" "CMakeFiles/TestProject.dir/src/Pociag.cpp.o.d"
+  "/home/student/Studia/KOLOSY/starty same/MKAR_2018_Pociag/Pociągi/src/Towarowy.cpp" "CMakeFiles/TestProject.dir/src/Towarowy.cpp.o" "gcc" "CMakeFiles/TestProject.dir/src/Towarowy.cpp.o.d"
+  "/home/student/Studia/KOLOSY/starty same/MKAR_2018_Pociag/Pociągi/src/Wagon.cpp" "CMakeFiles/TestProject.dir/src/Wagon.cpp.o" "gcc" "CMakeFiles/TestProject.dir/src/Wagon.cpp.o.d"
   "/home/student/Studia/KOLOSY/starty same/MKAR_2018_Pociag/Pociągi/test/BasicModelTest.cpp" "CMakeFiles/TestProject.dir/test/BasicModelTest.cpp.o" "gcc" "CMakeFiles/TestProject.dir/test/BasicModelTest.cpp.o.d"
   "/home/student/Studia/KOLOSY/starty same/MKAR_2018_Pociag/Pociągi/test/PociagTest.cpp" "CMakeFiles/TestProject.dir/test/PociagTest.cpp.o" "gcc" "CMakeFiles/TestProject.dir/test/PociagTest.cpp.o.d"
   "/home/student/Studia/KOLOSY/starty same/MKAR_2018_Pociag/Pociągi/test/master.cpp" "CMakeFiles/TestProject.dir/test/master.cpp.o" "gcc" "CMakeFiles/TestProject.dir/test/master.cpp.o.d"

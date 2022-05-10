@@ -168,6 +168,114 @@ check/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/check.dir/build.make CMakeFiles/check.dir/build
 .PHONY : check/fast
 
+src/Pasazerski.o: src/Pasazerski.cpp.o
+.PHONY : src/Pasazerski.o
+
+# target to build an object file
+src/Pasazerski.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Project.dir/build.make CMakeFiles/Project.dir/src/Pasazerski.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TestProject.dir/build.make CMakeFiles/TestProject.dir/src/Pasazerski.cpp.o
+.PHONY : src/Pasazerski.cpp.o
+
+src/Pasazerski.i: src/Pasazerski.cpp.i
+.PHONY : src/Pasazerski.i
+
+# target to preprocess a source file
+src/Pasazerski.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Project.dir/build.make CMakeFiles/Project.dir/src/Pasazerski.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TestProject.dir/build.make CMakeFiles/TestProject.dir/src/Pasazerski.cpp.i
+.PHONY : src/Pasazerski.cpp.i
+
+src/Pasazerski.s: src/Pasazerski.cpp.s
+.PHONY : src/Pasazerski.s
+
+# target to generate assembly for a file
+src/Pasazerski.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Project.dir/build.make CMakeFiles/Project.dir/src/Pasazerski.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TestProject.dir/build.make CMakeFiles/TestProject.dir/src/Pasazerski.cpp.s
+.PHONY : src/Pasazerski.cpp.s
+
+src/Pociag.o: src/Pociag.cpp.o
+.PHONY : src/Pociag.o
+
+# target to build an object file
+src/Pociag.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Project.dir/build.make CMakeFiles/Project.dir/src/Pociag.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TestProject.dir/build.make CMakeFiles/TestProject.dir/src/Pociag.cpp.o
+.PHONY : src/Pociag.cpp.o
+
+src/Pociag.i: src/Pociag.cpp.i
+.PHONY : src/Pociag.i
+
+# target to preprocess a source file
+src/Pociag.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Project.dir/build.make CMakeFiles/Project.dir/src/Pociag.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TestProject.dir/build.make CMakeFiles/TestProject.dir/src/Pociag.cpp.i
+.PHONY : src/Pociag.cpp.i
+
+src/Pociag.s: src/Pociag.cpp.s
+.PHONY : src/Pociag.s
+
+# target to generate assembly for a file
+src/Pociag.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Project.dir/build.make CMakeFiles/Project.dir/src/Pociag.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TestProject.dir/build.make CMakeFiles/TestProject.dir/src/Pociag.cpp.s
+.PHONY : src/Pociag.cpp.s
+
+src/Towarowy.o: src/Towarowy.cpp.o
+.PHONY : src/Towarowy.o
+
+# target to build an object file
+src/Towarowy.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Project.dir/build.make CMakeFiles/Project.dir/src/Towarowy.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TestProject.dir/build.make CMakeFiles/TestProject.dir/src/Towarowy.cpp.o
+.PHONY : src/Towarowy.cpp.o
+
+src/Towarowy.i: src/Towarowy.cpp.i
+.PHONY : src/Towarowy.i
+
+# target to preprocess a source file
+src/Towarowy.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Project.dir/build.make CMakeFiles/Project.dir/src/Towarowy.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TestProject.dir/build.make CMakeFiles/TestProject.dir/src/Towarowy.cpp.i
+.PHONY : src/Towarowy.cpp.i
+
+src/Towarowy.s: src/Towarowy.cpp.s
+.PHONY : src/Towarowy.s
+
+# target to generate assembly for a file
+src/Towarowy.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Project.dir/build.make CMakeFiles/Project.dir/src/Towarowy.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TestProject.dir/build.make CMakeFiles/TestProject.dir/src/Towarowy.cpp.s
+.PHONY : src/Towarowy.cpp.s
+
+src/Wagon.o: src/Wagon.cpp.o
+.PHONY : src/Wagon.o
+
+# target to build an object file
+src/Wagon.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Project.dir/build.make CMakeFiles/Project.dir/src/Wagon.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TestProject.dir/build.make CMakeFiles/TestProject.dir/src/Wagon.cpp.o
+.PHONY : src/Wagon.cpp.o
+
+src/Wagon.i: src/Wagon.cpp.i
+.PHONY : src/Wagon.i
+
+# target to preprocess a source file
+src/Wagon.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Project.dir/build.make CMakeFiles/Project.dir/src/Wagon.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TestProject.dir/build.make CMakeFiles/TestProject.dir/src/Wagon.cpp.i
+.PHONY : src/Wagon.cpp.i
+
+src/Wagon.s: src/Wagon.cpp.s
+.PHONY : src/Wagon.s
+
+# target to generate assembly for a file
+src/Wagon.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Project.dir/build.make CMakeFiles/Project.dir/src/Wagon.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TestProject.dir/build.make CMakeFiles/TestProject.dir/src/Wagon.cpp.s
+.PHONY : src/Wagon.cpp.s
+
 src/main.o: src/main.cpp.o
 .PHONY : src/main.o
 
@@ -276,6 +384,18 @@ help:
 	@echo "... check"
 	@echo "... Project"
 	@echo "... TestProject"
+	@echo "... src/Pasazerski.o"
+	@echo "... src/Pasazerski.i"
+	@echo "... src/Pasazerski.s"
+	@echo "... src/Pociag.o"
+	@echo "... src/Pociag.i"
+	@echo "... src/Pociag.s"
+	@echo "... src/Towarowy.o"
+	@echo "... src/Towarowy.i"
+	@echo "... src/Towarowy.s"
+	@echo "... src/Wagon.o"
+	@echo "... src/Wagon.i"
+	@echo "... src/Wagon.s"
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"

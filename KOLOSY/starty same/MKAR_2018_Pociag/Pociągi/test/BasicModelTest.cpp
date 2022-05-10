@@ -1,5 +1,8 @@
 #include <boost/test/unit_test.hpp>
-
+#include "Wagon.h"
+#include "Towarowy.h"
+#include "Pasazerski.h"
+#include "Pociag.h"
 
 BOOST_AUTO_TEST_SUITE(BasicModelTestSuite)
 

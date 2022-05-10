@@ -114,11 +114,71 @@ CMakeFiles/TestProject.dir/test/BasicModelTest.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/TestProject.dir/test/BasicModelTest.cpp.s"
 	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/student/Studia/KOLOSY/starty same/MKAR_2018_Pociag/Pociągi/test/BasicModelTest.cpp" -o CMakeFiles/TestProject.dir/test/BasicModelTest.cpp.s
 
+CMakeFiles/TestProject.dir/src/Wagon.cpp.o: CMakeFiles/TestProject.dir/flags.make
+CMakeFiles/TestProject.dir/src/Wagon.cpp.o: ../src/Wagon.cpp
+CMakeFiles/TestProject.dir/src/Wagon.cpp.o: CMakeFiles/TestProject.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/student/Studia/KOLOSY/starty same/MKAR_2018_Pociag/Pociągi/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/TestProject.dir/src/Wagon.cpp.o"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/TestProject.dir/src/Wagon.cpp.o -MF CMakeFiles/TestProject.dir/src/Wagon.cpp.o.d -o CMakeFiles/TestProject.dir/src/Wagon.cpp.o -c "/home/student/Studia/KOLOSY/starty same/MKAR_2018_Pociag/Pociągi/src/Wagon.cpp"
+
+CMakeFiles/TestProject.dir/src/Wagon.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/TestProject.dir/src/Wagon.cpp.i"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/student/Studia/KOLOSY/starty same/MKAR_2018_Pociag/Pociągi/src/Wagon.cpp" > CMakeFiles/TestProject.dir/src/Wagon.cpp.i
+
+CMakeFiles/TestProject.dir/src/Wagon.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/TestProject.dir/src/Wagon.cpp.s"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/student/Studia/KOLOSY/starty same/MKAR_2018_Pociag/Pociągi/src/Wagon.cpp" -o CMakeFiles/TestProject.dir/src/Wagon.cpp.s
+
+CMakeFiles/TestProject.dir/src/Pasazerski.cpp.o: CMakeFiles/TestProject.dir/flags.make
+CMakeFiles/TestProject.dir/src/Pasazerski.cpp.o: ../src/Pasazerski.cpp
+CMakeFiles/TestProject.dir/src/Pasazerski.cpp.o: CMakeFiles/TestProject.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/student/Studia/KOLOSY/starty same/MKAR_2018_Pociag/Pociągi/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/TestProject.dir/src/Pasazerski.cpp.o"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/TestProject.dir/src/Pasazerski.cpp.o -MF CMakeFiles/TestProject.dir/src/Pasazerski.cpp.o.d -o CMakeFiles/TestProject.dir/src/Pasazerski.cpp.o -c "/home/student/Studia/KOLOSY/starty same/MKAR_2018_Pociag/Pociągi/src/Pasazerski.cpp"
+
+CMakeFiles/TestProject.dir/src/Pasazerski.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/TestProject.dir/src/Pasazerski.cpp.i"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/student/Studia/KOLOSY/starty same/MKAR_2018_Pociag/Pociągi/src/Pasazerski.cpp" > CMakeFiles/TestProject.dir/src/Pasazerski.cpp.i
+
+CMakeFiles/TestProject.dir/src/Pasazerski.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/TestProject.dir/src/Pasazerski.cpp.s"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/student/Studia/KOLOSY/starty same/MKAR_2018_Pociag/Pociągi/src/Pasazerski.cpp" -o CMakeFiles/TestProject.dir/src/Pasazerski.cpp.s
+
+CMakeFiles/TestProject.dir/src/Towarowy.cpp.o: CMakeFiles/TestProject.dir/flags.make
+CMakeFiles/TestProject.dir/src/Towarowy.cpp.o: ../src/Towarowy.cpp
+CMakeFiles/TestProject.dir/src/Towarowy.cpp.o: CMakeFiles/TestProject.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/student/Studia/KOLOSY/starty same/MKAR_2018_Pociag/Pociągi/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/TestProject.dir/src/Towarowy.cpp.o"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/TestProject.dir/src/Towarowy.cpp.o -MF CMakeFiles/TestProject.dir/src/Towarowy.cpp.o.d -o CMakeFiles/TestProject.dir/src/Towarowy.cpp.o -c "/home/student/Studia/KOLOSY/starty same/MKAR_2018_Pociag/Pociągi/src/Towarowy.cpp"
+
+CMakeFiles/TestProject.dir/src/Towarowy.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/TestProject.dir/src/Towarowy.cpp.i"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/student/Studia/KOLOSY/starty same/MKAR_2018_Pociag/Pociągi/src/Towarowy.cpp" > CMakeFiles/TestProject.dir/src/Towarowy.cpp.i
+
+CMakeFiles/TestProject.dir/src/Towarowy.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/TestProject.dir/src/Towarowy.cpp.s"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/student/Studia/KOLOSY/starty same/MKAR_2018_Pociag/Pociągi/src/Towarowy.cpp" -o CMakeFiles/TestProject.dir/src/Towarowy.cpp.s
+
+CMakeFiles/TestProject.dir/src/Pociag.cpp.o: CMakeFiles/TestProject.dir/flags.make
+CMakeFiles/TestProject.dir/src/Pociag.cpp.o: ../src/Pociag.cpp
+CMakeFiles/TestProject.dir/src/Pociag.cpp.o: CMakeFiles/TestProject.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/student/Studia/KOLOSY/starty same/MKAR_2018_Pociag/Pociągi/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/TestProject.dir/src/Pociag.cpp.o"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/TestProject.dir/src/Pociag.cpp.o -MF CMakeFiles/TestProject.dir/src/Pociag.cpp.o.d -o CMakeFiles/TestProject.dir/src/Pociag.cpp.o -c "/home/student/Studia/KOLOSY/starty same/MKAR_2018_Pociag/Pociągi/src/Pociag.cpp"
+
+CMakeFiles/TestProject.dir/src/Pociag.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/TestProject.dir/src/Pociag.cpp.i"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/student/Studia/KOLOSY/starty same/MKAR_2018_Pociag/Pociągi/src/Pociag.cpp" > CMakeFiles/TestProject.dir/src/Pociag.cpp.i
+
+CMakeFiles/TestProject.dir/src/Pociag.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/TestProject.dir/src/Pociag.cpp.s"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/student/Studia/KOLOSY/starty same/MKAR_2018_Pociag/Pociągi/src/Pociag.cpp" -o CMakeFiles/TestProject.dir/src/Pociag.cpp.s
+
 # Object files for target TestProject
 TestProject_OBJECTS = \
 "CMakeFiles/TestProject.dir/test/master.cpp.o" \
 "CMakeFiles/TestProject.dir/test/PociagTest.cpp.o" \
-"CMakeFiles/TestProject.dir/test/BasicModelTest.cpp.o"
+"CMakeFiles/TestProject.dir/test/BasicModelTest.cpp.o" \
+"CMakeFiles/TestProject.dir/src/Wagon.cpp.o" \
+"CMakeFiles/TestProject.dir/src/Pasazerski.cpp.o" \
+"CMakeFiles/TestProject.dir/src/Towarowy.cpp.o" \
+"CMakeFiles/TestProject.dir/src/Pociag.cpp.o"
 
 # External object files for target TestProject
 TestProject_EXTERNAL_OBJECTS =
@@ -126,10 +186,14 @@ TestProject_EXTERNAL_OBJECTS =
 TestProject: CMakeFiles/TestProject.dir/test/master.cpp.o
 TestProject: CMakeFiles/TestProject.dir/test/PociagTest.cpp.o
 TestProject: CMakeFiles/TestProject.dir/test/BasicModelTest.cpp.o
+TestProject: CMakeFiles/TestProject.dir/src/Wagon.cpp.o
+TestProject: CMakeFiles/TestProject.dir/src/Pasazerski.cpp.o
+TestProject: CMakeFiles/TestProject.dir/src/Towarowy.cpp.o
+TestProject: CMakeFiles/TestProject.dir/src/Pociag.cpp.o
 TestProject: CMakeFiles/TestProject.dir/build.make
 TestProject: /usr/lib/x86_64-linux-gnu/libboost_unit_test_framework.so
 TestProject: CMakeFiles/TestProject.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="/home/student/Studia/KOLOSY/starty same/MKAR_2018_Pociag/Pociągi/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable TestProject"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="/home/student/Studia/KOLOSY/starty same/MKAR_2018_Pociag/Pociągi/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_8) "Linking CXX executable TestProject"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/TestProject.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
