@@ -15,7 +15,7 @@ set(CMAKE_VERBOSE_MAKEFILE TRUE)
 #Source files here
 set(SOURCE_FILES
         src/main.cpp
-        src/Pociag.cpp include/Pociag.h src/Wagon.cpp include/Wagon.h src/Pasazerski.cpp include/Pasazerski.h src/Towarowy.cpp include/Towarowy.h)
+        )
 
 add_executable(Project ${SOURCE_FILES})
 
@@ -34,7 +34,6 @@ set(SOURCE_TEST_FILES
         test/master.cpp
         test/PociagTest.cpp
         test/BasicModelTest.cpp
-        src/Pociag.cpp include/Pociag.h src/Wagon.cpp include/Wagon.h src/Pasazerski.cpp include/Pasazerski.h src/Towarowy.cpp include/Towarowy.h
         )
 
 add_executable(TestProject ${SOURCE_TEST_FILES})
