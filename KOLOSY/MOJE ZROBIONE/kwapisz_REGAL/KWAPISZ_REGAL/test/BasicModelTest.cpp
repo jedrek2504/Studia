@@ -1,7 +1,7 @@
 #include <boost/test/unit_test.hpp>
-#include "Regal.hpp"
-#include "Czasopismo.hpp"
-#include "Ksiazka.hpp"
+#include "Regal.h"
+#include "Czasopismo.h"
+#include "Ksiazka.h"
 
 BOOST_AUTO_TEST_SUITE(BasicModelTestSuite)
 
@@ -21,7 +21,7 @@ BOOST_AUTO_TEST_SUITE(BasicModelTestSuite)
         BOOST_REQUIRE_EQUAL(regal.pobierzLiczbeElementow(), 0);
 
         Czasopismo *czasopismo = new Czasopismo("Młoady Technik", 100);
-        regal.odloz(czasopismo);
+        regal.odloz(static_cast<Element_ptr>(czasopismo)); //musialem tak zrobic yo
 
         BOOST_REQUIRE_EQUAL(regal.pobierzZajeteMiejsce(), 100);
         BOOST_REQUIRE_EQUAL(regal.pobierzLiczbeElementow(), 1);

@@ -15,9 +15,7 @@ set(CMAKE_VERBOSE_MAKEFILE TRUE)
 #Source files here
 set(SOURCE_FILES
         src/main.cpp
-        src/Element.cpp include/Element.hpp src/Czasopismo.cpp include/Czasopismo.hpp
-        src/Ksiazka.cpp include/Ksiazka.hpp
-        src/Regal.cpp include/Regal.hpp)
+        src/Element.cpp include/Element.h src/Ksiazka.cpp include/Ksiazka.h src/Czasopismo.cpp include/Czasopismo.h src/Regal.cpp include/Regal.h)
 
 add_executable(Project ${SOURCE_FILES})
 
@@ -36,10 +34,7 @@ set(SOURCE_TEST_FILES
         test/master.cpp
         test/RegalTest.cpp
         test/BasicModelTest.cpp
-        src/Element.cpp include/Element.hpp
-        src/Czasopismo.cpp include/Czasopismo.hpp
-        src/Ksiazka.cpp include/Ksiazka.hpp
-        src/Regal.cpp include/Regal.hpp)
+        src/Element.cpp include/Element.h src/Ksiazka.cpp include/Ksiazka.h src/Czasopismo.cpp include/Czasopismo.h src/Regal.cpp include/Regal.h)
 
 add_executable(TestProject ${SOURCE_TEST_FILES})
 

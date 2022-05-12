@@ -1,0 +1,62 @@
+[
+{
+  "directory": "/home/student/Studia/KOLOSY/MOJE ZROBIONE/kwapisz_REGAL/KWAPISZ_REGAL/cmake-build-debug",
+  "command": "/usr/bin/g++  -I\"/home/student/Studia/KOLOSY/MOJE ZROBIONE/kwapisz_REGAL/KWAPISZ_REGAL/include\" -g -std=gnu++11 -o CMakeFiles/Project.dir/src/main.cpp.o -c \"/home/student/Studia/KOLOSY/MOJE ZROBIONE/kwapisz_REGAL/KWAPISZ_REGAL/src/main.cpp\"",
+  "file": "/home/student/Studia/KOLOSY/MOJE ZROBIONE/kwapisz_REGAL/KWAPISZ_REGAL/src/main.cpp"
+},
+{
+  "directory": "/home/student/Studia/KOLOSY/MOJE ZROBIONE/kwapisz_REGAL/KWAPISZ_REGAL/cmake-build-debug",
+  "command": "/usr/bin/g++  -I\"/home/student/Studia/KOLOSY/MOJE ZROBIONE/kwapisz_REGAL/KWAPISZ_REGAL/include\" -g -std=gnu++11 -o CMakeFiles/Project.dir/src/Element.cpp.o -c \"/home/student/Studia/KOLOSY/MOJE ZROBIONE/kwapisz_REGAL/KWAPISZ_REGAL/src/Element.cpp\"",
+  "file": "/home/student/Studia/KOLOSY/MOJE ZROBIONE/kwapisz_REGAL/KWAPISZ_REGAL/src/Element.cpp"
+},
+{
+  "directory": "/home/student/Studia/KOLOSY/MOJE ZROBIONE/kwapisz_REGAL/KWAPISZ_REGAL/cmake-build-debug",
+  "command": "/usr/bin/g++  -I\"/home/student/Studia/KOLOSY/MOJE ZROBIONE/kwapisz_REGAL/KWAPISZ_REGAL/include\" -g -std=gnu++11 -o CMakeFiles/Project.dir/src/Ksiazka.cpp.o -c \"/home/student/Studia/KOLOSY/MOJE ZROBIONE/kwapisz_REGAL/KWAPISZ_REGAL/src/Ksiazka.cpp\"",
+  "file": "/home/student/Studia/KOLOSY/MOJE ZROBIONE/kwapisz_REGAL/KWAPISZ_REGAL/src/Ksiazka.cpp"
+},
+{
+  "directory": "/home/student/Studia/KOLOSY/MOJE ZROBIONE/kwapisz_REGAL/KWAPISZ_REGAL/cmake-build-debug",
+  "command": "/usr/bin/g++  -I\"/home/student/Studia/KOLOSY/MOJE ZROBIONE/kwapisz_REGAL/KWAPISZ_REGAL/include\" -g -std=gnu++11 -o CMakeFiles/Project.dir/src/Czasopismo.cpp.o -c \"/home/student/Studia/KOLOSY/MOJE ZROBIONE/kwapisz_REGAL/KWAPISZ_REGAL/src/Czasopismo.cpp\"",
+  "file": "/home/student/Studia/KOLOSY/MOJE ZROBIONE/kwapisz_REGAL/KWAPISZ_REGAL/src/Czasopismo.cpp"
+},
+{
+  "directory": "/home/student/Studia/KOLOSY/MOJE ZROBIONE/kwapisz_REGAL/KWAPISZ_REGAL/cmake-build-debug",
+  "command": "/usr/bin/g++  -I\"/home/student/Studia/KOLOSY/MOJE ZROBIONE/kwapisz_REGAL/KWAPISZ_REGAL/include\" -g -std=gnu++11 -o CMakeFiles/Project.dir/src/Regal.cpp.o -c \"/home/student/Studia/KOLOSY/MOJE ZROBIONE/kwapisz_REGAL/KWAPISZ_REGAL/src/Regal.cpp\"",
+  "file": "/home/student/Studia/KOLOSY/MOJE ZROBIONE/kwapisz_REGAL/KWAPISZ_REGAL/src/Regal.cpp"
+},
+{
+  "directory": "/home/student/Studia/KOLOSY/MOJE ZROBIONE/kwapisz_REGAL/KWAPISZ_REGAL/cmake-build-debug",
+  "command": "/usr/bin/g++  -I\"/home/student/Studia/KOLOSY/MOJE ZROBIONE/kwapisz_REGAL/KWAPISZ_REGAL/include\" -g -std=gnu++11 -o CMakeFiles/TestProject.dir/test/master.cpp.o -c \"/home/student/Studia/KOLOSY/MOJE ZROBIONE/kwapisz_REGAL/KWAPISZ_REGAL/test/master.cpp\"",
+  "file": "/home/student/Studia/KOLOSY/MOJE ZROBIONE/kwapisz_REGAL/KWAPISZ_REGAL/test/master.cpp"
+},
+{
+  "directory": "/home/student/Studia/KOLOSY/MOJE ZROBIONE/kwapisz_REGAL/KWAPISZ_REGAL/cmake-build-debug",
+  "command": "/usr/bin/g++  -I\"/home/student/Studia/KOLOSY/MOJE ZROBIONE/kwapisz_REGAL/KWAPISZ_REGAL/include\" -g -std=gnu++11 -o CMakeFiles/TestProject.dir/test/RegalTest.cpp.o -c \"/home/student/Studia/KOLOSY/MOJE ZROBIONE/kwapisz_REGAL/KWAPISZ_REGAL/test/RegalTest.cpp\"",
+  "file": "/home/student/Studia/KOLOSY/MOJE ZROBIONE/kwapisz_REGAL/KWAPISZ_REGAL/test/RegalTest.cpp"
+},
+{
+  "directory": "/home/student/Studia/KOLOSY/MOJE ZROBIONE/kwapisz_REGAL/KWAPISZ_REGAL/cmake-build-debug",
+  "command": "/usr/bin/g++  -I\"/home/student/Studia/KOLOSY/MOJE ZROBIONE/kwapisz_REGAL/KWAPISZ_REGAL/include\" -g -std=gnu++11 -o CMakeFiles/TestProject.dir/test/BasicModelTest.cpp.o -c \"/home/student/Studia/KOLOSY/MOJE ZROBIONE/kwapisz_REGAL/KWAPISZ_REGAL/test/BasicModelTest.cpp\"",
+  "file": "/home/student/Studia/KOLOSY/MOJE ZROBIONE/kwapisz_REGAL/KWAPISZ_REGAL/test/BasicModelTest.cpp"
+},
+{
+  "directory": "/home/student/Studia/KOLOSY/MOJE ZROBIONE/kwapisz_REGAL/KWAPISZ_REGAL/cmake-build-debug",
+  "command": "/usr/bin/g++  -I\"/home/student/Studia/KOLOSY/MOJE ZROBIONE/kwapisz_REGAL/KWAPISZ_REGAL/include\" -g -std=gnu++11 -o CMakeFiles/TestProject.dir/src/Element.cpp.o -c \"/home/student/Studia/KOLOSY/MOJE ZROBIONE/kwapisz_REGAL/KWAPISZ_REGAL/src/Element.cpp\"",
+  "file": "/home/student/Studia/KOLOSY/MOJE ZROBIONE/kwapisz_REGAL/KWAPISZ_REGAL/src/Element.cpp"
+},
+{
+  "directory": "/home/student/Studia/KOLOSY/MOJE ZROBIONE/kwapisz_REGAL/KWAPISZ_REGAL/cmake-build-debug",
+  "command": "/usr/bin/g++  -I\"/home/student/Studia/KOLOSY/MOJE ZROBIONE/kwapisz_REGAL/KWAPISZ_REGAL/include\" -g -std=gnu++11 -o CMakeFiles/TestProject.dir/src/Ksiazka.cpp.o -c \"/home/student/Studia/KOLOSY/MOJE ZROBIONE/kwapisz_REGAL/KWAPISZ_REGAL/src/Ksiazka.cpp\"",
+  "file": "/home/student/Studia/KOLOSY/MOJE ZROBIONE/kwapisz_REGAL/KWAPISZ_REGAL/src/Ksiazka.cpp"
+},
+{
+  "directory": "/home/student/Studia/KOLOSY/MOJE ZROBIONE/kwapisz_REGAL/KWAPISZ_REGAL/cmake-build-debug",
+  "command": "/usr/bin/g++  -I\"/home/student/Studia/KOLOSY/MOJE ZROBIONE/kwapisz_REGAL/KWAPISZ_REGAL/include\" -g -std=gnu++11 -o CMakeFiles/TestProject.dir/src/Czasopismo.cpp.o -c \"/home/student/Studia/KOLOSY/MOJE ZROBIONE/kwapisz_REGAL/KWAPISZ_REGAL/src/Czasopismo.cpp\"",
+  "file": "/home/student/Studia/KOLOSY/MOJE ZROBIONE/kwapisz_REGAL/KWAPISZ_REGAL/src/Czasopismo.cpp"
+},
+{
+  "directory": "/home/student/Studia/KOLOSY/MOJE ZROBIONE/kwapisz_REGAL/KWAPISZ_REGAL/cmake-build-debug",
+  "command": "/usr/bin/g++  -I\"/home/student/Studia/KOLOSY/MOJE ZROBIONE/kwapisz_REGAL/KWAPISZ_REGAL/include\" -g -std=gnu++11 -o CMakeFiles/TestProject.dir/src/Regal.cpp.o -c \"/home/student/Studia/KOLOSY/MOJE ZROBIONE/kwapisz_REGAL/KWAPISZ_REGAL/src/Regal.cpp\"",
+  "file": "/home/student/Studia/KOLOSY/MOJE ZROBIONE/kwapisz_REGAL/KWAPISZ_REGAL/src/Regal.cpp"
+}
+]
