@@ -1,6 +1,0 @@
-/home/student/CLionProjects/KOLOSY/ZROBIONE/StatekMKar2020/cmake-build-debug/CMakeFiles/edit_cache.dir
-/home/student/CLionProjects/KOLOSY/ZROBIONE/StatekMKar2020/cmake-build-debug/CMakeFiles/Project.dir
-/home/student/CLionProjects/KOLOSY/ZROBIONE/StatekMKar2020/cmake-build-debug/CMakeFiles/rebuild_cache.dir
-/home/student/CLionProjects/KOLOSY/ZROBIONE/StatekMKar2020/cmake-build-debug/CMakeFiles/TestProject.dir
-/home/student/CLionProjects/KOLOSY/ZROBIONE/StatekMKar2020/cmake-build-debug/CMakeFiles/check.dir
-/home/student/CLionProjects/KOLOSY/ZROBIONE/StatekMKar2020/cmake-build-debug/CMakeFiles/test.dir

@@ -1,9 +1,0 @@
-# ninja log v5
-9	95	1652096033301036238	CMakeFiles/TestProject.dir/src/Ladunek.cpp.o	8a520095d290d1d7
-8	846	1652096034037404240	CMakeFiles/TestProject.dir/src/Paletowy.cpp.o	230b420a390a4cab
-846	1898	1652096035101936240	CMakeFiles/TestProject.dir/src/Luzny.cpp.o	cbc63f19f8d8bff6
-96	1950	1652096035153962240	CMakeFiles/TestProject.dir/src/Statek.cpp.o	7e20619bc4618f8b
-7	2956	1652096036158464240	CMakeFiles/TestProject.dir/test/master.cpp.o	f687925e55f02b35
-7	3896	1652096037098934243	CMakeFiles/TestProject.dir/test/StatekTest.cpp.o	4c393ff58ab50855
-0	3917	1652096037118944244	CMakeFiles/TestProject.dir/test/BasicModelTest.cpp.o	b666bc7d0608a133
-3917	4224	1652096037427098244	TestProject	91218ce27e33b4f4

@@ -1,1 +1,0 @@
-/usr/bin/g++ -g CMakeFiles/Project.dir/src/main.cpp.o CMakeFiles/Project.dir/src/Element.cpp.o CMakeFiles/Project.dir/src/Ksiazka.cpp.o CMakeFiles/Project.dir/src/Czasopismo.cpp.o CMakeFiles/Project.dir/src/Regal.cpp.o -o Project 

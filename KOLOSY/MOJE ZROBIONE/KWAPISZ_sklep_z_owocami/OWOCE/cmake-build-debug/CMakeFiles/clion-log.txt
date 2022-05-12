@@ -1,1 +1,0 @@
-CMakeLists.txt not found in /home/student/Studia/KOLOSY/MOJE ZROBIONE/KWAPISZ_sklep_z_owocami/OWOCE Select CMakeLists.txt

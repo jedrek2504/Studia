@@ -1,8 +1,0 @@
-# ninja log v5
-14	455	1651770245403923585	CMakeFiles/Kolokwium.dir/src/Template.cpp.o	b264d9ee250559ce
-0	837	1651770245788115585	CMakeFiles/Kolokwium.dir/src/biuro.cpp.o	ee613d5953b88719
-0	859	1651770245808125584	CMakeFiles/Kolokwium.dir/src/budynek.cpp.o	b1ff4ec81cd15a5f
-9	923	1651770245872157584	CMakeFiles/Kolokwium.dir/src/mieszkanie.cpp.o	34ea5fafac47767d
-1	937	1651770245888165584	CMakeFiles/Kolokwium.dir/src/lokal.cpp.o	12dcb89768c01466
-456	1094	1651770246044243585	CMakeFiles/Kolokwium.dir/src/main.cpp.o	86fa95b37f006c37
-1094	1179	1651770246128285585	Kolokwium	afce0c85a1f4514d
