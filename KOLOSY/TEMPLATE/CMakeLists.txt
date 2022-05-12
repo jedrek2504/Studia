@@ -15,7 +15,7 @@ set(CMAKE_VERBOSE_MAKEFILE TRUE)
 #Source files here
 set(SOURCE_FILES
         src/main.cpp
-        src/Element.cpp include/Element.h src/Ksiazka.cpp include/Ksiazka.h src/Czasopismo.cpp include/Czasopismo.h src/Regal.cpp include/Regal.h)
+        src/Abstrakcyjna.cpp include/Abstrakcyjna.h src/Pochodna1.cpp include/Pochodna1.h src/Pochodna2.cpp include/Pochodna2.h src/Glowna.cpp include/Glowna.h)
 
 add_executable(Project ${SOURCE_FILES})
 
@@ -31,10 +31,8 @@ include_directories(
 
 #Test source files here
 set(SOURCE_TEST_FILES
-        test/master.cpp
-        test/RegalTest.cpp
-        test/BasicModelTest.cpp
-        )
+        test/GlownaTest.cpp
+        src/Abstrakcyjna.cpp include/Abstrakcyjna.h src/Pochodna1.cpp include/Pochodna1.h src/Pochodna2.cpp include/Pochodna2.h src/Glowna.cpp include/Glowna.h)
 
 add_executable(TestProject ${SOURCE_TEST_FILES})
 
