@@ -17,7 +17,6 @@ public:
     std::string toString() override;
 
 
-    const std::string &getPochodna1Zmienna() const; //-
 
 };
 typedef std::shared_ptr<Pochodna1> Pochodna1_ptr; //

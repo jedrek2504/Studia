@@ -17,6 +17,7 @@ class Glowna //
 
 public:
 
+    std::vector<Abstrakcyjna_ptr> elementy; //
     bool dodaj(Abstrakcyjna_ptr element); //
     bool usun(Abstrakcyjna_ptr element); //
 
@@ -28,8 +29,6 @@ public:
     std::string toString();
 
 
-
-    int getPojemnosc() const; //-
 
 };
 typedef std::shared_ptr<Glowna> Glowna_ptr; //

@@ -17,7 +17,6 @@ public:
     virtual std::string toString();
 
 
-    int getWirtualnaZmienna() const; //-
 };
 typedef std::shared_ptr<Abstrakcyjna> Abstrakcyjna_ptr; //
 
