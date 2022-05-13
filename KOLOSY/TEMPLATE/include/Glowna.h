@@ -13,7 +13,6 @@ class Glowna //
 {
     //POLA
     int pojemnosc;
-    std::vector<Abstrakcyjna_ptr> elementy; //
 
 public:
 
