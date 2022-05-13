@@ -21,7 +21,7 @@ BOOST_AUTO_TEST_SUITE(RejestrPojazdowTest)
         BOOST_TEST_REQUIRE(glowna->pobierzLiczbe() == );
         BOOST_TEST_REQUIRE(glowna->pobierzLaczna() == );
 
-        glowna->toString();
+        std::cout<<glowna->toString();
 
     }
 
@@ -36,12 +36,14 @@ BOOST_AUTO_TEST_SUITE(RejestrPojazdowTest)
         BOOST_TEST_REQUIRE(glowna->pobierzLiczbe() == );
         BOOST_TEST_REQUIRE(glowna->pobierzLaczna() == );
 
+        std::cout<<glowna->toString();
+
         glowna->usun(pochodna1);
 
         BOOST_TEST_REQUIRE(glowna->pobierzLiczbe() == );
         BOOST_TEST_REQUIRE(glowna->pobierzLaczna() == );
 
-        glowna->toString();
+        std::cout<<glowna->toString();
 
     }
 
