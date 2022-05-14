@@ -16,7 +16,7 @@ set(CMAKE_VERBOSE_MAKEFILE TRUE)
 set(SOURCE_FILES
         src/Template.cpp
         src/main.cpp
-        )
+        src/Lokal.cpp include/Lokal.h src/Mieszkanie.cpp include/Mieszkanie.h src/Biuro.cpp include/Biuro.h src/Budynek.cpp include/Budynek.h)
 #add following files to executable file 'Kolokwium'
 add_executable(Kolokwium ${SOURCE_FILES})
 
@@ -35,7 +35,7 @@ include_directories(
 set(SOURCE_TEST_FILES
         test/master.cpp
         test/TestTemplate.cpp
-        src/Template.cpp)
+        src/Template.cpp src/Lokal.cpp include/Lokal.h src/Mieszkanie.cpp include/Mieszkanie.h src/Biuro.cpp include/Biuro.h src/Budynek.cpp include/Budynek.h test/CzynszTest.cpp)
 
 add_executable(TestProject ${SOURCE_TEST_FILES})
 
