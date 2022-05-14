@@ -16,7 +16,7 @@ set(CMAKE_VERBOSE_MAKEFILE TRUE)
 set(SOURCE_FILES
         src/Template.cpp
         src/main.cpp
-        )
+        src/Element.cpp include/Element.h src/LazikMarsjanski.cpp include/LazikMarsjanski.h src/Satelita.cpp include/Satelita.h src/RakietaKosmiczna.cpp include/RakietaKosmiczna.h)
 #add following files to executable file 'Kolokwium'
 add_executable(Kolokwium ${SOURCE_FILES})
 
@@ -35,7 +35,7 @@ include_directories(
 set(SOURCE_TEST_FILES
         test/master.cpp
         test/TestTemplate.cpp
-        src/Template.cpp)
+        src/Template.cpp src/Element.cpp include/Element.h src/LazikMarsjanski.cpp include/LazikMarsjanski.h src/Satelita.cpp include/Satelita.h src/RakietaKosmiczna.cpp include/RakietaKosmiczna.h test/RakietaTest.cpp)
 
 add_executable(TestProject ${SOURCE_TEST_FILES})
 
