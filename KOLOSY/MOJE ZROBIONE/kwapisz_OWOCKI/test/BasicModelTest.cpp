@@ -1,9 +1,8 @@
 #include <boost/test/unit_test.hpp>
 
-#include "Jablko.hpp"
-#include "Sliwka.hpp"
-
-#include "Skrzynka.hpp"
+#include "Jablko.h"
+#include "Sliwka.h"
+#include "Skrzynka.h"
 
 BOOST_AUTO_TEST_SUITE(BasicModelTestSuite)
 
@@ -31,7 +30,7 @@ BOOST_AUTO_TEST_SUITE(BasicModelTestSuite)
         Skrzynka skrzynka(2.0);//maksymalna masa w kilogramach
 
         Sliwka *owoc = new Sliwka(1.0, 2.0);//waga,cenaZaKilogram
-        BOOST_REQUIRE(skrzynka.wlozOwoc(owoc));
+        BOOST_REQUIRE(skrzynka.wlozOwoc(static_cast<Owoc_ptr>(owoc))); // korzystam z shared pointera zatem trzeba zorbic static_cast
 
         BOOST_REQUIRE_GT(skrzynka.pobierzMasaCalkowita(), 0.0);
         BOOST_REQUIRE_GT(skrzynka.pobierzCenaCalkowita(), 0.0);

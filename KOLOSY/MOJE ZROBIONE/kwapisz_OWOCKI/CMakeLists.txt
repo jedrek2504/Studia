@@ -15,7 +15,7 @@ set(CMAKE_VERBOSE_MAKEFILE TRUE)
 #Source files here
 set(SOURCE_FILES
         src/main.cpp
-    )
+        src/Owoc.cpp include/Owoc.h src/Jablko.cpp include/Jablko.h src/Sliwka.cpp include/Sliwka.h src/Skrzynka.cpp include/Skrzynka.h)
 
 add_executable(Project ${SOURCE_FILES})
 
@@ -33,7 +33,7 @@ include_directories(
 set(SOURCE_TEST_FILES
         test/master.cpp
         test/SkrzynkaTest.cpp
-        test/BasicModelTest.cpp)
+        test/BasicModelTest.cpp src/Owoc.cpp include/Owoc.h src/Jablko.cpp include/Jablko.h src/Sliwka.cpp include/Sliwka.h src/Skrzynka.cpp include/Skrzynka.h)
 
 add_executable(TestProject ${SOURCE_TEST_FILES})
 
