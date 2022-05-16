@@ -1,0 +1,114 @@
+﻿Kolokwium - Sklep z owocami (2018)
+
+
+Bazowy projekt CMake do kolokwium  znajduje się TUTAJ. Projekt zawiera testy w pliku test/BasicModelTest.cpp sprawdzające:
+
+
+    poprawność implementacji konstruktorów owoców - badany jest ich stan początkowy,
+
+    czy skrzynka zaraz po utworzeniu jest pusta
+
+    metod sprawdzających cenę całkowitą i masę owoców znajdujących się w skrzynce.
+
+
+
+Masz sklep z owocami. Zaimplementuj klasę Skrzynka, której podczas jej tworzenia nadawana jest maksymalna ładowność. 
+Ładowność skrzynki nie może ulegać zmianie. Do i z skrzynki można wkładać i wyjmować owoce. 
+Skrzynka wie jaka jest całkowita waga owoców w niej składowanych i ile są one warte
+
+Sklep sprzedaje:
+
+
+    Jabłka
+
+    Śliwki
+
+
+Każdy owoc ma od razu ustaloną cenę za 1 kg i wagę. Uwaga, np. każde Jabłko może mieć inną cenę za kilogram. 
+Wartości te są ustalone dla danego owocu i później nie mogą być już zmienione
+
+
+
+W metodzie main() napisz kod w którym tworzysz skrzynkę o dowolnej pojemności i dodajesz do niej po jednym typie owocu. 
+Na konsoli wypisz rezultat działania metody Skrzynka::toString()
+
+
+Dodatkowy opis do zadania
+
+
+    Program ma być zgodny z przedstawionym poniżej diagramem UML. Sprawdź nazwy klas i niektórych metod w dostarczonych testach w projekcie bazowym
+
+    Pamiętaj o stosowaniu deklaracji wyprzedzających zamiast dyrektyw #include tam, gdzie jest to możliwe.
+
+    Kolekcje obiektów początkowo mają być puste. Zastosuj w konstruktorach listy inicjalizacyjne tam, gdzie jest to możliwe.
+
+    Kod testów w test/BasicModelTest.cpp ma się kompilować - sygnatury metod i konstruktorów muszą się zgadzać z tymi użytymi w testach. 
+Może być konieczne dopisanie metod nie uwzględnionych na diagramie.
+
+    Dla klas owoców metoda toString()ma zwracać ciąg znaków z tekstowym opisem obiektu. 
+Opis obiektu musi zawierać nazwę klasy oraz nazwy i wartości wszystkich pól obiektu. W przypadku skrzynki metoda toString() ma zwrócić opisy 
+wszystkich obiektów w niej znajdujących się, po jednym w każdej linii. Metoda Owoc::toString() jest abstrakcyjna.
+
+    Do prawidłowego zarządzania pamięcią można wykorzystać smart pointery
+
+    W metodzie dodającej owoc do skrzynki zwróć uwagę na jej maksymalną pojemność. W metodzie dodającej i usuwającej sprawdź czy kolekcja uległa zmianie. 
+Pamiętaj, że skrzynka zarządza owocami. Usunięcie obiektu ze skrzynki powinno skutkować usunięciem go z pamięci.
+
+    W metodzie skrzynki pobierz...() zawróć uwagę, że owoc ma podaną cenę za kilogram
+
+
+
+Scenariusze testowe
+
+
+
+W pliku test/SkrzynkaTest.cpp znajdują się w zestawie testów dwa przypadki testowe do zaimplementowania. 
+Pamiętaj o prawidłowym porównywaniu liczb zmiennopozycyjnych w testach.
+
+
+
+Test 1 - Dodawanie owoców do Skrzynki
+
+
+    Utwórz skrzynkę o ładowności 2kg
+
+    Utwórz 2 jabłka po 1kg każde i jedną 100g śliwkę
+
+    Wkładaj je do skrzynki w kolejności jabłko, śliwka, jabłko i sprawdź poprawność wykonania operacji
+
+    Porównaj czy oczekiwana cena i masa owoców w skrzynce jest zgodna z aktualną
+
+
+
+Test 2 - Usuwanie owoców ze Skrzynki
+
+
+    Utwórz skrzynkę o dowolnej ładowności
+
+    Utwórz trzy owoce i włóż je do skrzynki (mają się w niej zmieścić)
+
+    Sprawdź czy cena i masa owoców jest prawidłowa
+
+    Usuń drugi z włożonych owoców
+
+    Sprawdź czy udało się usunąć owoc ze skrzynki i porównaj czy oczekiwana łączna cena i masa owoców w skrzynce jest zgodna z aktualną
+
+
+
+Uwaga!
+
+Diagram jest uproszczony, gdyż nie przedstawia wszystkich wymaganych metod, konstruktorów, destruktorów i pól. 
+Typy parametrów nie pokazują czy jest to wskazanie, referencja, czy też smart pointer
+
+
+
+Wymagania:
+
+
+    Sprawdzane będą tylko te programy, których kod się kompiluje i projekt się buduje !!!
+
+    Przygotowany kod skompresować do archiwum ZIP.
+
+    Archiwum nazwać Nazwisko_Imie_Kolokwium.zip, bez polskich znaków
+
+    Nie dołączać do archiwum skompilowanego kodu i zbudowanej aplikacji
