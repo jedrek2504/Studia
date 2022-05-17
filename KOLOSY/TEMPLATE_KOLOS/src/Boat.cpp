@@ -30,7 +30,7 @@ void Boat::setIsAvailable(bool isAvailable) {
     Boat::isAvailable = isAvailable;
 }
 
-bool Boat::getAvailable() const {
+bool Boat::getIsAvailable() const {
     return isAvailable;
 }
 

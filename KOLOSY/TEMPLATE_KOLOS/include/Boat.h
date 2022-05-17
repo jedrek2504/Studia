@@ -24,7 +24,7 @@ public:
 
     const std::string &getName() const;
 
-    bool getAvailable() const;
+    bool getIsAvailable() const; //????
 
     virtual std::string getBoatInfo();
     virtual int calculateRentalPrice()=0;
