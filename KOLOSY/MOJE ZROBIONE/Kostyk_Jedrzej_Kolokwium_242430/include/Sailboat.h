@@ -1,6 +1,9 @@
-#ifndef TEMPLATE_POCHODNA2_H
-#define TEMPLATE_POCHODNA2_H
+//
+// Created by student on 17.05.2022.
+//
 
+#ifndef START_SAILBOAT_H
+#define START_SAILBOAT_H
 #include <iostream>
 #include <memory>
 #include "Boat.h"
@@ -21,6 +24,4 @@ public:
 
 };
 typedef std::shared_ptr<Sailboat> Sailboat_ptr;
-
-
-#endif
+#endif //START_SAILBOAT_H

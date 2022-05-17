@@ -1,5 +1,8 @@
-#include "RowBoat.h"
+//
+// Created by student on 17.05.2022.
+//
 
+#include "Rowboat.h"
 #include <sstream>
 
 using namespace std;

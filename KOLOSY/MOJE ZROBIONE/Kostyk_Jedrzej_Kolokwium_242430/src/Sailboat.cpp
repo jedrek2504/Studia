@@ -1,5 +1,8 @@
-#include "SailBoat.h"
+//
+// Created by student on 17.05.2022.
+//
 
+#include "Sailboat.h"
 #include <sstream>
 
 using namespace std;

@@ -1,9 +1,9 @@
-#ifndef TEMPLATE_GLOWNA_H
-#define TEMPLATE_GLOWNA_H
+//
+// Created by student on 17.05.2022.
+//
 
-
-
-
+#ifndef START_BOATRENTAL_H
+#define START_BOATRENTAL_H
 #include <iostream>
 #include <memory>
 #include <vector>
@@ -32,7 +32,4 @@ public:
 };
 typedef std::shared_ptr<BoatRental> BoatRental_ptr;
 
-
-
-
-#endif
+#endif //START_BOATRENTAL_H

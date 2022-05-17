@@ -1,5 +1,8 @@
-#include "Boat.h"
+//
+// Created by student on 17.05.2022.
+//
 
+#include "Boat.h"
 #include <sstream>
 
 using namespace std;
@@ -33,4 +36,3 @@ void Boat::setIsAvailable(bool isAvailable) {
 bool Boat::getIsAvailable() const {
     return isAvailable;
 }
-

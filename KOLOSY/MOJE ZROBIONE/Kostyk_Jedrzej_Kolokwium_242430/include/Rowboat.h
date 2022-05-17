@@ -1,9 +1,9 @@
-#ifndef TEMPLATE_POCHODNA1_H
-#define TEMPLATE_POCHODNA1_H
+//
+// Created by student on 17.05.2022.
+//
 
-
-
-
+#ifndef START_ROWBOAT_H
+#define START_ROWBOAT_H
 #include <iostream>
 #include <memory>
 #include "Boat.h"
@@ -24,8 +24,4 @@ public:
 
 };
 typedef std::shared_ptr<Rowboat> Rowboat_ptr;
-
-
-
-
-#endif
+#endif //START_ROWBOAT_H

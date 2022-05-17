@@ -1,9 +1,9 @@
-#ifndef TEMPLATE_ABSTRAKCYJNA_H
-#define TEMPLATE_ABSTRAKCYJNA_H
+//
+// Created by student on 17.05.2022.
+//
 
-
-
-
+#ifndef START_BOAT_H
+#define START_BOAT_H
 #include <iostream>
 #include <memory>
 
@@ -24,16 +24,11 @@ public:
 
     const std::string &getName() const;
 
-    bool getIsAvailable() const; //????
+    bool getIsAvailable() const;
 
     virtual std::string getBoatInfo();
     virtual int calculateRentalPrice()=0;
 
 };
 typedef std::shared_ptr<Boat> Boat_ptr;
-
-
-
-
-
-#endif
+#endif //START_BOAT_H

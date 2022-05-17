@@ -15,7 +15,7 @@ set(CMAKE_VERBOSE_MAKEFILE TRUE)
 #Source files here
 set(SOURCE_FILES
         src/main.cpp
-        src/Boat.cpp include/Boat.h src/RowBoat.cpp include/RowBoat.h src/SailBoat.cpp include/SailBoat.h src/BoatRental.cpp include/BoatRental.h)
+        src/Boat.cpp include/Boat.h src/Rowboat.cpp include/Rowboat.h src/Sailboat.cpp include/Sailboat.h src/BoatRental.cpp include/BoatRental.h)
 
 add_executable(Project ${SOURCE_FILES})
 
@@ -29,10 +29,14 @@ include_directories(
         ${Boost_INCLUDE_DIRS}
 )
 
+enable_testing()
+
 #Test source files here
 set(SOURCE_TEST_FILES
-        test/GlownaTest.cpp
-        src/Boat.cpp include/Boat.h src/RowBoat.cpp include/RowBoat.h src/SailBoat.cpp include/SailBoat.h src/BoatRental.cpp include/BoatRental.h)
+        test/master.cpp
+        test/BasicModelTest.cpp
+        test/BoatRentalTest.cpp
+        src/Boat.cpp include/Boat.h src/Rowboat.cpp include/Rowboat.h src/Sailboat.cpp include/Sailboat.h src/BoatRental.cpp include/BoatRental.h)
 
 add_executable(TestProject ${SOURCE_TEST_FILES})
 
@@ -41,7 +45,7 @@ target_include_directories(TestProject PUBLIC include)
 target_link_libraries(TestProject
         ${Boost_UNIT_TEST_FRAMEWORK_LIBRARY})
 
-enable_testing()
+
 
 add_test(NAME Test COMMAND TestProject
         --report_level=detailed

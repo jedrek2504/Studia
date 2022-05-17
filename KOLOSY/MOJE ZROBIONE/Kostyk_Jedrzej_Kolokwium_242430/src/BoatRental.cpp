@@ -1,5 +1,8 @@
-#include "BoatRental.h"
+//
+// Created by student on 17.05.2022.
+//
 
+#include "BoatRental.h"
 #include <sstream>
 
 using namespace std;
@@ -11,9 +14,11 @@ void BoatRental::addBoat(Boat_ptr bptr) {
 void BoatRental::rentBoat(int boatId) {
     for(int i=0 ; i<boats.size() ; i++)
     {
-        if(boatId == boats[i]->getBoatId())
+        if(boatId == boats[i]->getBoatId() && boats[i]->getIsAvailable() == true)
         {
             boats[i]->setIsAvailable(false);
+            setAccount(getAccount() + boats[i]->calculateRentalPrice());
+            return;
         }
     }
 }
@@ -21,10 +26,10 @@ void BoatRental::rentBoat(int boatId) {
 void BoatRental::returnBoat(int boatId) {
     for(int i=0 ; i<boats.size() ; i++)
     {
-        if(boatId == boats[i]->getBoatId())
+        if(boatId == boats[i]->getBoatId() && boats[i]->getIsAvailable() == false)
         {
             boats[i]->setIsAvailable(true);
-            setAccount(getAccount() + boats[i]->calculateRentalPrice()); //NIE WIEM CZY PRZY ZWRACANIU LODZI
+            return;
         }
     }
 }
