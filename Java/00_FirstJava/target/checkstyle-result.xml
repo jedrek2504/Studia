@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<checkstyle version="8.36">
+<file name="/home/student/IdeaProjects/00_FirstJava/src/main/java/pl/first/firstjava/App.java">
+<error line="10" column="15" severity="error" message="Member name &apos;a_Pole&apos; must match pattern &apos;^[a-z][a-z0-9][a-zA-Z0-9]*$&apos;." source="com.puppycrawl.tools.checkstyle.checks.naming.MemberNameCheck"/>
+</file>
+<file name="/home/student/IdeaProjects/00_FirstJava/src/main/java/pl/first/firstjava/Greeter.java">
+</file>
+</checkstyle>
