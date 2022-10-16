@@ -2,7 +2,7 @@ package model;
 
 import java.util.Random;
 
-public class temp {
+public class SudokuBoard {
 //declarations:
     private int[][] board;
     private final int row = 9; //size of the board stored in variables to help with future refactoring
@@ -14,38 +14,41 @@ public class temp {
 
         Random rand = new Random();
 
-        //generates 2d array filled with random numbers
-        for(int i=0 ; i<this.row ; i++) {
-            for(int j=0 ; j<this.col ; j++) {
-                this.board[i][j] = rand.nextInt(this.board.length) + 1;
-            }
+        //fills random place in every row with increasing value(1,2,3,...,9)
+        for (int i = 0; i < this.row; i++) {
+            this.board[i][rand.nextInt(this.row)] = i + 1;
         }
-        this.resolveBoard();
+
+       this.resolveBoard();
     }
 
 //checks if row (as a whole) has a given value
-    public boolean rowCheck(final int row , int value){
+    private boolean rowCheck(final int row , int value){
         for(int i=0; i<this.row ; i++){
-            if(this.board[row][i] == value) return false;
+            if(this.board[row][i] == value) {
+                return false;
+            }
         }
         return true;
     }
 
 //checks if column (as a whole) has a given value
-    public boolean colCheck(final int col , int value){
+    private boolean colCheck(final int col , int value){
         for(int i=0; i<this.col ; i++){
-            if(this.board[i][col] == value) return false;
+            if(this.board[i][col] == value) {
+                return false;
+            }
         }
         return true;
     }
 
 //checks if specific square has a given value
-    public boolean sqrCheck(final int row , final int col , int value){
+    private boolean sqrCheck(final int row , final int col , int value){
         //first I need coords of left right corner of the square:
         int currentSqrRow = row - (row % 3); //determines what row the mentioned square begins
         int currentSqrCol = col - (col % 3); //determines what col the mentioned square begins
 
-        //we go trough every (of the 9) given places and check if given value is in any of them
+        //we go trough every place (9 total) and check if given value is in any of them
         for(int i=currentSqrRow ; i<currentSqrRow+3 ; i++){
             for(int j=currentSqrCol; j<currentSqrCol+3 ; j++){
                 if(this.board[i][j]==value){
@@ -58,26 +61,27 @@ public class temp {
 
 //checks if given number in given place(row,col) abides Sudoku rules
     public boolean checkAllConditions(final int row, final int col , int value){
-        if(this.rowCheck(row,value)==true && this.colCheck(col,value)==true && this.sqrCheck(row,col,value)==true) return true;
-        return false;
+        return this.rowCheck(row, value) && this.colCheck(col, value)
+                && this.sqrCheck(row, col, value);
     }
 
-    public boolean resolveBoard(){
+//solves board
+    private boolean resolveBoard(){
         for(int row=0; row<this.row ; row++){
             for(int col=0; col<this.col ; col++){
-                if(this.board[row][col]==0){
-                    for(int value=1 ; value<=9 ; value++){
-                        if(this.checkAllConditions(row, col, value)) {
-                            this.board[row][col] = value;
-                            if(resolveBoard()){
+                if(this.board[row][col]==0){                            //searching for 0
+                    for(int value=1 ; value<=9 ; value++){              //when found, we go through every value 1-9
+                        if(this.checkAllConditions(row, col, value)) {  //to see if its correct
+                            this.board[row][col] = value;               //when correct -> we asaign this value to the place
+                            if(this.resolveBoard()){                    //we return true and use recursion to find the next empty spot ("0")
                                 return true;
                             }
-                            else {
+                            else {                                      //if a found value not we set the value back to 0 and search for a higher value
                                 this.board[row][col]=0;
                             }
                         }
-                        return false;
                     }
+                    return false;                                       //if we cant find a right value for a specfic spot at all, we return false and it means that a sudoku board is unsolvable (cant happen in my implementation)
                 }
             }
         }
@@ -97,6 +101,15 @@ public class temp {
         return chain.toString();
     }
 
+//getters and setters -> used in tests
+    public int getValue(final int row, final int col) {
+        return this.board[row][col];
+    }
+    public void setValue(final int row, final int col, int value) {
+        this.board[row][col]=value;
+    }
+
 }
+
 
 
