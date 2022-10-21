@@ -2,18 +2,19 @@ package model;
 
 import java.util.Random;
 
-public class BacktrackingSudokuSolver implements SudokuSolver  {
+public class BacktrackingSudokuSolver implements SudokuSolver {
+    Random rand = new Random();
+
 
     @Override
     public void solve(SudokuBoard board) {
-        Random rand = new Random();
-
-        for(int row = 0 ; row < 9 ; row++) {
+        for (int row=0; row <= 9; row++) {
             board.setGrid(row, rand.nextInt(9), row + 1);
         }
 
-        this.solveSudoku(board);
+        solveSudoku(board);
     }
+
 
     private boolean solveSudoku(SudokuBoard board) {
 
@@ -46,5 +47,6 @@ public class BacktrackingSudokuSolver implements SudokuSolver  {
         }
         return true;
     }
-
 }
+
+
