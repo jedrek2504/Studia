@@ -1,14 +1,14 @@
 package main;
 
+import model.BacktrackingSudokuSolver;
 import model.SudokuBoard;
 
 
 public class Main {
     public static void main(String[] args) {
-        var board = new SudokuBoard();
+        SudokuBoard sudokuBoard1 = new SudokuBoard(new BacktrackingSudokuSolver());
 
-        board.fillBoard();
-        System.out.println(board.toString());
-
+        sudokuBoard1.solveGame();
+        System.out.println(sudokuBoard1.toString());
     }
 }

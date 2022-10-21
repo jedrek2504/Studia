@@ -12,38 +12,39 @@ public class SudokuBoard {
         this.board = new int[9][9];
         this.sudokuSolver = sudokuSolver;
     }
-    
+
+    //returns the value of a certain grid
     public int getGrid(int x, int y) {
         return this.board[x][y];
     }
 
+    //sets the value of a certain grid
     public void setGrid(int x, int y, int value) {
-        this.board[x][y] = value;
-    }
-
-    public void solveGame() {
-
-    }
-
-    /*
-    //fills board following sudoku rules in a random manner.
-    public void fillBoard() {
-        this.board = new int[this.row][this.col];
-
-        Random rand = new Random();
-
-        //fills random place in every row with increasing value(1,2,3,...,9)
-        for (int i = 0; i < this.row; i++) {
-            this.board[i][rand.nextInt(this.row)] = i + 1;
+        if (x >= 0 && y <= 8 && value >= 1 && value <= 9) {
+            this.board[x][y] = value;
         }
+    }
 
-        this.resolveBoard();
+    //solves the game
+    public void solveGame() {
+        sudokuSolver.solve(this);
+    }
+
+    public boolean isBoardFull() {
+        for(int x = 0; x < 9 ; x++)  {
+            for(int y = 0; y < 9 ; y++) {
+                if (this.getGrid(x, y) == 0) {
+                    return false;
+                }
+            }
+        }
+        return true;
     }
 
     //checks if row (as a whole) has a given value
-    private boolean rowCheck(final int row, int value) {
-        for (int i = 0; i < this.row; i++) {
-            if (this.board[row][i] == value) {
+    private boolean xCheck(final int x, int value) {
+        for (int i = 0; i < 9; i++) {
+            if (this.board[x][i] == value) {
                 return false;
             }
         }
@@ -51,20 +52,20 @@ public class SudokuBoard {
     }
 
     //checks if column (as a whole) has a given value
-    private boolean colCheck(final int col, int value) {
-        for (int i = 0; i < this.col; i++) {
-            if (this.board[i][col] == value) {
+    private boolean yCheck(final int y, int value) {
+        for (int i = 0; i < 9; i++) {
+            if (this.board[i][y] == value) {
                 return false;
             }
         }
         return true;
     }
 
-    //checks if specific square has a given value
-    private boolean sqrCheck(final int row, final int col, int value) {
+    //checks if a square has a given value
+    private boolean sqrCheck(final int x, final int y, int value) {
         //first I need coords of left right corner of the square:
-        int currentSqrRow = row - (row % 3); //determines what row the mentioned square begins
-        int currentSqrCol = col - (col % 3); //determines what col the mentioned square begins
+        int currentSqrRow = x - (x % 3);
+        int currentSqrCol = y - (y % 3);
 
         //we go through every place (9 total) and check if given value is in any of them
         for (int i = currentSqrRow; i < currentSqrRow + 3; i++) {
@@ -77,13 +78,14 @@ public class SudokuBoard {
         return true;
     }
 
-    //checks if given number in given place(row,col) abides Sudoku rules
-    public boolean checkAllConditions(final int row, final int col, int value) {
-        return this.rowCheck(row, value) && this.colCheck(col, value)
-                && this.sqrCheck(row, col, value);
+    //checks all conditions
+    public boolean checkAllConditions(final int x, final int y, int value) {
+        return this.xCheck(x, value) && this.yCheck(y, value)
+                && this.sqrCheck(x, y, value);
     }
 
-    //solves board
+    /*
+   //solves board
     private boolean resolveBoard() {
         for (int row = 0; row < this.row; row++) {
             for (int col = 0; col < this.col; col++) {
@@ -115,11 +117,13 @@ public class SudokuBoard {
         return true;
     }
 
+     */
+
     public String toString() {
         StringBuilder chain = new StringBuilder();
 
-        for (int i = 0; i < row; i++) {
-            for (int j = 0; j < col; j++) {
+        for (int i = 0; i < 9; i++) {
+            for (int j = 0; j < 9; j++) {
                 chain.append(this.board[i][j]);
                 chain.append(' ');
             }
@@ -128,16 +132,6 @@ public class SudokuBoard {
         return chain.toString();
     }
 
-    //getters and setters -> used in tests
-    public int getValue(final int row, final int col) {
-        return this.board[row][col];
-    }
-
-    public void setValue(final int row, final int col, int value) {
-        this.board[row][col] = value;
-    }
-
-     */
 }
 
 
