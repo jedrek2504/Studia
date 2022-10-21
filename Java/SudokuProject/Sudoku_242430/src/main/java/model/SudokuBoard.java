@@ -5,11 +5,27 @@ import java.util.Random;
 public class SudokuBoard {
     //declarations:
     private int[][] board;
+    private SudokuSolver sudokuSolver;
 
-    //size of the board stored in variables to help with future refactoring
-    private final int row = 9;
-    private final int col = 9;
+    //constructor
+    public SudokuBoard(SudokuSolver sudokuSolver) {
+        this.board = new int[9][9];
+        this.sudokuSolver = sudokuSolver;
+    }
+    
+    public int getGrid(int x, int y) {
+        return this.board[x][y];
+    }
 
+    public void setGrid(int x, int y, int value) {
+        this.board[x][y] = value;
+    }
+
+    public void solveGame() {
+
+    }
+
+    /*
     //fills board following sudoku rules in a random manner.
     public void fillBoard() {
         this.board = new int[this.row][this.col];
@@ -120,6 +136,8 @@ public class SudokuBoard {
     public void setValue(final int row, final int col, int value) {
         this.board[row][col] = value;
     }
+
+     */
 }
 
 
