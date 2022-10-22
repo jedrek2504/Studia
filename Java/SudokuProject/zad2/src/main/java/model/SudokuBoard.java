@@ -23,24 +23,18 @@ public class SudokuBoard {
         }
     }
 
+    //returns solver
+    public SudokuSolver getSudokuSolver() {
+        return sudokuSolver;
+    }
+
     //solves the game
     public void solveGame() {
         sudokuSolver.solve(this);
     }
 
-    public boolean isBoardFull() {
-        for(int x = 0; x < 9 ; x++)  {
-            for(int y = 0; y < 9 ; y++) {
-                if (this.getGrid(x, y) == 0) {
-                    return false;
-                }
-            }
-        }
-        return true;
-    }
-
     //checks if row (as a whole) has a given value
-    private boolean xCheck(int x, int value) {
+    public boolean isRowGood(int x, int value) {
         for (int i = 0; i < 9; i++) {
             if (this.board[x][i] == value) {
                 return false;
@@ -50,7 +44,7 @@ public class SudokuBoard {
     }
 
     //checks if column (as a whole) has a given value
-    private boolean yCheck(int y, int value) {
+    public boolean isColGood(int y, int value) {
         for (int i = 0; i < 9; i++) {
             if (this.board[i][y] == value) {
                 return false;
@@ -60,7 +54,7 @@ public class SudokuBoard {
     }
 
     //checks if a square has a given value
-    private boolean sqrCheck(int x, int y, int value) {
+    public boolean isSqrGood(int x, int y, int value) {
         //first I need coords of left right corner of the square:
         int currentSqrRow = x - (x % 3);
         int currentSqrCol = y - (y % 3);
@@ -78,29 +72,43 @@ public class SudokuBoard {
 
     //checks all conditions
     public boolean checkAllConditions(int x, int y, int value) {
-        return this.xCheck(x, value) && this.yCheck(y, value)
-                && this.sqrCheck(x, y, value);
+        return this.isRowGood(x, value) && this.isColGood(y, value)
+                && this.isSqrGood(x, y, value);
+    }
+
+    //method checks if board is filled in a correct way
+    public boolean isBoardCorrect() {
+        int temp;
+        for (int i = 0; i < 9; i++) {
+            for (int j = 0; j < 9; j++) {
+                temp = getGrid(i, j);
+                setGrid(i, j, 0);
+                if (checkAllConditions(i, j, temp)) {
+                    setGrid(i, j, temp);
+                } else {
+                    return false;
+                }
+            }
+        }
+        return true;
     }
 
     //prints board
-     public void printBoard() {
-             for (int i = 0; i < 9; i++) {
-                 if (i % 3 == 0) {
-                     System.out.print("+-------+-------+-------+\n");
-                 }
+    public void printBoard() {
+        for (int i = 0; i < 9; i++) {
+            if (i % 3 == 0) {
+                System.out.print("+-------+-------+-------+\n");
+            }
 
-                 for (int j = 0; j < 9; j++) {
-                     if (j % 3 == 0) {
-                         System.out.print("| ");
-                     }
-                     System.out.print(getGrid(i, j) + " ");
-                 }
-                 System.out.print("|");
-                 System.out.println();
-             }
-             System.out.print("+-------+-------+-------+\n");
-         }
-
+            for (int j = 0; j < 9; j++) {
+                if (j % 3 == 0) {
+                    System.out.print("| ");
+                }
+                System.out.print(getGrid(i, j) + " ");
+            }
+            System.out.print("|");
+            System.out.println();
+        }
+        System.out.print("+-------+-------+-------+\n");
+    }
 }
-
-

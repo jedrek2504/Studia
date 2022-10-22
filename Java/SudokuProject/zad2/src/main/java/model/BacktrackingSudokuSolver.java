@@ -8,7 +8,7 @@ public class BacktrackingSudokuSolver implements SudokuSolver {
 
     @Override
     public void solve(SudokuBoard board) {
-        for (int row=0; row <= 9; row++) {
+        for (int row = 0; row <= 9; row++) {
             board.setGrid(row, rand.nextInt(9), row + 1);
         }
 
@@ -47,6 +47,8 @@ public class BacktrackingSudokuSolver implements SudokuSolver {
         }
         return true;
     }
+
+
 }
 
 
