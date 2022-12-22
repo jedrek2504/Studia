@@ -11,6 +11,7 @@ let frameCount = 0;
 let dino;
 let obstacles = [];
 let score = 0;
+let collisionSound = document.getElementById('collisionSound');
 
 // Classes
 class Dino {
@@ -136,6 +137,8 @@ function checkCollision() {
             // Check for vertical collision
             if (dino.y < obstacle.y + obstacle.height && dino.y + dino.height > obstacle.y) {
                 // Collision detected!
+                collisionSound.currentTime = 0;
+                collisionSound.play();
                 return true;
             }
         }
