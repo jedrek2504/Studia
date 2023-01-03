@@ -103,6 +103,9 @@ document.addEventListener('keydown', event => {
     }
 });
 
+document.addEventListener('click', function() {
+    mainMenuSound.play();
+});
 
 // Functions
 
@@ -115,11 +118,6 @@ function init() {
     // Create dino
     dino = new Dino();
 
-    // Start main menu music
-    mainMenuSound.currentTime = 0.1;
-    mainMenuSound.play();
-    mainMenuSound.volume = 0.3;
-
     // Show main menu
     showMainMenu();
 }
@@ -127,6 +125,12 @@ function init() {
 // Show the main menu
 function showMainMenu() {
     document.getElementById('mainMenu').style.display = 'block';
+
+    console.log("weed");
+    // Start main menu music
+    mainMenuSound.currentTime = 0;
+    mainMenuSound.play();
+    mainMenuSound.volume = 0.3;
 }
 
 // Start the game
