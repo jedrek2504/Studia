@@ -10,8 +10,11 @@ let ctx;
 let frameCount = 0;
 let dino;
 let obstacles = [];
+let obstacleSpeed = 3;
 let score = 0;
 let collisionSound = document.getElementById('collisionSound');
+let jumpSound = document.getElementById('jumpSound');
+let mainMenuSound = document.getElementById('mainMenuSound');
 
 // Classes
 class Dino {
@@ -50,35 +53,39 @@ class Dino {
 class Obstacle {
     constructor() {
         this.x = CANVAS_WIDTH;
-        const type = randomNumber();
+        const obstacleType = randomNumber();
+        const colorType = randomNumber();
+        const colors = ['red', 'blue', 'green'];
 
-        if(type === 1)
+        if(obstacleType === 1)
         {
             this.y = CANVAS_HEIGHT - 25;
             this.width = 50;
             this.height = 50;
+            this.color = colors[colorType - 1];
         }
-        if(type === 2)
+        if(obstacleType === 2)
         {
             this.y = CANVAS_HEIGHT - 25;
             this.width = 25;
             this.height = 50;
+            this.color = colors[colorType - 1];
         }
-        if(type === 3)
+        if(obstacleType === 3)
         {
             this.y = CANVAS_HEIGHT - 40;
             this.width = 25;
             this.height = 50;
+            this.color = colors[colorType - 1];
         }
     }
 
     update() {
-        this.x -= 5;
+        this.x -= obstacleSpeed;
     }
 
     draw() {
-        const color = randomNumber();
-        ctx.fillStyle = 'green';
+        ctx.fillStyle = this.color;
         ctx.fillRect(this.x, this.y, this.width, this.height);
     }
 }
@@ -91,6 +98,8 @@ document.getElementById('playAgain').addEventListener('click', resetGame);
 document.addEventListener('keydown', event => {
     if (event.code === 'Space') {
         dino.jump();
+        jumpSound.currentTime = -0.5;
+        jumpSound.play();
     }
 });
 
@@ -105,6 +114,11 @@ function init() {
 
     // Create dino
     dino = new Dino();
+
+    // Start main menu music
+    mainMenuSound.currentTime = 0.1;
+    mainMenuSound.play();
+    mainMenuSound.volume = 0.3;
 
     // Show main menu
     showMainMenu();
@@ -122,6 +136,11 @@ function startGame() {
 
     // Start game loop
     requestAnimationFrame(loop);
+
+    // Start increasing obstacle speed every second
+    setInterval(function() {
+        obstacleSpeed += 0.2;
+    }, 1000);
 }
 
 // Update the score
@@ -137,7 +156,7 @@ function checkCollision() {
             // Check for vertical collision
             if (dino.y < obstacle.y + obstacle.height && dino.y + dino.height > obstacle.y) {
                 // Collision detected!
-                collisionSound.currentTime = 0;
+                collisionSound.currentTime = -0.6;
                 collisionSound.play();
                 return true;
             }
@@ -154,6 +173,10 @@ function showGameOver() {
 
 // Reset the game
 function resetGame() {
+    // Start music again
+    mainMenuSound.currentTime = -0.5;
+    mainMenuSound.play();
+    mainMenuSound.volume = 0.5;
     // Hide the game over screen
     document.getElementById('gameOver').style.display = 'none';
 
@@ -163,6 +186,7 @@ function resetGame() {
     dino.y = 100;
     dino.velocity = 0;
     obstacles = [];
+    obstacleSpeed = 3;
     score = 0;
 
     // Restart game loop
@@ -182,6 +206,8 @@ function loop() {
     // Check for game over
     if (checkCollision()) {
         showGameOver();
+        mainMenuSound.currentTime = -0.5;
+        mainMenuSound.pause();
         return;
     }
 

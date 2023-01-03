@@ -43,7 +43,8 @@ body {
     position: absolute; /* Position the element over the game canvas */
     top: 10px;
     right: 10px;
-    color: white;
+    color: black;
+    font-weight: bold;
     font-size: 20px;
 }
 
