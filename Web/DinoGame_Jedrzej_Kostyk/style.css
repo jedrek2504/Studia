@@ -10,6 +10,14 @@ body {
     fill: green;
 }
 
+#author {
+    font-size: 13px;
+    font-family: 'Cursive', sans-serif;
+    font-weight: bold;
+    color: black;
+}
+
+
 #gameCanvas {
     border: 1px solid black;
     margin: 0 auto; /* Center the element horizontally */
@@ -52,4 +60,13 @@ body {
     font-size: 30px;
     font-weight: bold;
     color: black;
+}
+
+#mainMenu h1 {
+    font-size: 36px;
+    color: white;
+}
+
+button#startGame {
+    background-color: white;
 }

@@ -240,4 +240,3 @@ function loop() {
 
 // Function init() call
 init();
-
