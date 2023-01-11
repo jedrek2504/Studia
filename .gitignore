@@ -36,3 +36,5 @@ build
 cmake-build-debug
 target
 venv
+derby
+log4jDemo_
