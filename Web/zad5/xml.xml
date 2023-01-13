@@ -1,0 +1,1143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="wypozyczalnia_samochodow.xsl" type="text/xsl" ?>
+
+<wypozyczalnia_samochodow>
+	<samochody>
+		<samochod pozycja="P1" seriaID="S4">
+			<model> F82 </model>
+			<dane_techniczne>
+				<segment> D </segment>
+				<pojemnosc_silnika jednostka="cm^3"> 2979 </pojemnosc_silnika>
+				<uklad_cylindrow> R6 </uklad_cylindrow>
+				<srednie_spalanie jednostka="l/100km"> 7.1 </srednie_spalanie>
+				<moc_maksymalna jednostka="KM"> 500 </moc_maksymalna>
+				<maks_moment_obrotowy jednostka="Nm"> 600 </maks_moment_obrotowy>		
+			</dane_techniczne>
+			<pierwsza_rejestracja> 12.07.2017 </pierwsza_rejestracja>
+			<kolor> niebieski </kolor>
+			<wyposazenie> 
+				<dodatek> ABS </dodatek>
+				<dodatek> Elektryczne szyby przednie </dodatek>
+				<dodatek> Poduszka powietrzna kierowcy </dodatek>
+				<dodatek> Wspomaganie kierownicy </dodatek>
+				<dodatek> ASR (kontrola trakcji) </dodatek>
+				<dodatek> Czujnik deszczu </dodatek>
+				<dodatek> Czujniki parkowania tylne </dodatek>
+				<dodatek> Gniazdo AUX </dodatek>
+				<dodatek> Kamera cofania </dodatek>
+				<dodatek> Podgrzewane przednie siedzenia </dodatek>
+				<dodatek> CD </dodatek>
+				<dodatek> Elektrycznie ustawiane lusterka </dodatek>
+				<dodatek> Poduszka powietrzna pasażera </dodatek>
+				<dodatek> Alarm </dodatek>
+				<dodatek> Asystent parkowania </dodatek>
+				<dodatek> Czujnik zmierzchu </dodatek>
+				<dodatek> Elektrochromatyczne lusterka boczne </dodatek>
+				<dodatek> Gniazdo USB </dodatek>
+				<dodatek> Klimatyzacja dwustrefowa </dodatek>
+				<dodatek> System Start-Stop </dodatek>
+				<dodatek> Centralny zamek </dodatek>
+				<dodatek> Immobilizer </dodatek>
+				<dodatek> Radio fabryczne </dodatek>
+				<dodatek> Alufelgi </dodatek>
+				<dodatek> Bluetooth </dodatek>
+				<dodatek> Czujniki parkowania przednie </dodatek>
+				<dodatek> ESP (stabilizacja toru jazdy) </dodatek>
+				<dodatek> HUD (wyświetlacz przezierny) </dodatek>
+				<dodatek> Nawigacja GPS </dodatek>
+				<dodatek> Światła LED </dodatek>
+			</wyposazenie>
+			<cena jednostka="PLN"> 1500.00 </cena>
+		</samochod>
+		
+		<samochod pozycja="P2" seriaID="S7">
+			<model> G11 </model>
+			<dane_techniczne>
+				<segment> F </segment>
+				<pojemnosc_silnika jednostka="cm^3"> 4395 </pojemnosc_silnika>
+				<uklad_cylindrow> V8 </uklad_cylindrow>
+				<srednie_spalanie jednostka="l/100km"> 11.8 </srednie_spalanie>
+				<moc_maksymalna jednostka="KM"> 450 </moc_maksymalna>
+				<maks_moment_obrotowy jednostka="Nm"> 650 </maks_moment_obrotowy>		
+			</dane_techniczne>
+			<pierwsza_rejestracja> 22.01.2018 </pierwsza_rejestracja>
+			<kolor> czarny </kolor>
+			<wyposazenie> 
+				<dodatek> ABS </dodatek>
+				<dodatek> Elektryczne szyby przednie </dodatek>
+				<dodatek> Poduszka powietrzna kierowcy </dodatek>
+				<dodatek> Wspomaganie kierownicy </dodatek>
+				<dodatek> ASR (kontrola trakcji) </dodatek>
+				<dodatek> Czujnik deszczu </dodatek>
+				<dodatek> Czujniki parkowania tylne </dodatek>
+				<dodatek> Gniazdo AUX </dodatek>
+				<dodatek> Kamera cofania </dodatek>
+				<dodatek> Podgrzewane przednie siedzenia </dodatek>
+				<dodatek> CD </dodatek>
+				<dodatek> Elektrycznie ustawiane lusterka </dodatek>
+				<dodatek> Poduszka powietrzna pasażera </dodatek>
+				<dodatek> Alarm </dodatek>
+				<dodatek> Asystent parkowania </dodatek>
+				<dodatek> Czujnik zmierzchu </dodatek>
+				<dodatek> Elektrochromatyczne lusterka boczne </dodatek>
+				<dodatek> Gniazdo USB </dodatek>
+				<dodatek> Klimatyzacja dwustrefowa </dodatek>
+				<dodatek> System Start-Stop </dodatek>
+				<dodatek> Centralny zamek </dodatek>
+				<dodatek> Immobilizer </dodatek>
+				<dodatek> Radio fabryczne </dodatek>
+				<dodatek> Alufelgi </dodatek>
+				<dodatek> Bluetooth </dodatek>
+				<dodatek> Czujniki parkowania przednie </dodatek>
+				<dodatek> ESP (stabilizacja toru jazdy) </dodatek>
+				<dodatek> HUD (wyświetlacz przezierny) </dodatek>
+				<dodatek> Nawigacja GPS </dodatek>
+				<dodatek> Światła LED </dodatek>
+			</wyposazenie>
+			<cena jednostka="PLN"> 1200.00 </cena>
+		</samochod>
+		
+		
+		<samochod pozycja="P3" seriaID="S7">
+			<model> F01 </model>
+			<dane_techniczne>
+				<segment> F </segment>
+				<pojemnosc_silnika jednostka="cm^3"> 4395 </pojemnosc_silnika>
+				<uklad_cylindrow> V8 </uklad_cylindrow>
+				<srednie_spalanie jednostka="l/100km"> 14.4 </srednie_spalanie>
+				<moc_maksymalna jednostka="KM"> 407 </moc_maksymalna>
+				<maks_moment_obrotowy jednostka="Nm"> 600 </maks_moment_obrotowy>		
+			</dane_techniczne>
+			<pierwsza_rejestracja> 28.05.2013 </pierwsza_rejestracja>
+			<kolor> bialy </kolor>
+			<wyposazenie> 
+				<dodatek> ABS </dodatek>
+				<dodatek> Elektryczne szyby przednie </dodatek>
+				<dodatek> Poduszka powietrzna kierowcy </dodatek>
+				<dodatek> Wspomaganie kierownicy </dodatek>
+				<dodatek> ASR (kontrola trakcji) </dodatek>
+				<dodatek> Czujnik deszczu </dodatek>
+				<dodatek> Czujniki parkowania tylne </dodatek>
+				<dodatek> Gniazdo AUX </dodatek>
+				<dodatek> Kamera cofania </dodatek>
+				<dodatek> Podgrzewane przednie siedzenia </dodatek>
+				<dodatek> CD </dodatek>
+				<dodatek> Elektrycznie ustawiane lusterka </dodatek>
+				<dodatek> Poduszka powietrzna pasażera </dodatek>
+				<dodatek> Alarm </dodatek>
+				<dodatek> Elektrochromatyczne lusterka boczne </dodatek>
+				<dodatek> Gniazdo USB </dodatek>
+				<dodatek> Klimatyzacja dwustrefowa </dodatek>
+				<dodatek> System Start-Stop </dodatek>
+				<dodatek> Centralny zamek </dodatek>
+				<dodatek> Immobilizer </dodatek>
+				<dodatek> Radio fabryczne </dodatek>
+				<dodatek> Alufelgi </dodatek>
+				<dodatek> Bluetooth </dodatek>
+				<dodatek> Czujniki parkowania przednie </dodatek>
+				<dodatek> ESP (stabilizacja toru jazdy) </dodatek>
+				<dodatek> Nawigacja GPS </dodatek>
+			</wyposazenie>
+			<cena jednostka="PLN"> 700.00 </cena>
+		</samochod>
+		
+		<samochod pozycja="P4" seriaID="S7">
+			<model> E65 </model>
+			<dane_techniczne>
+				<segment> F </segment>
+				<pojemnosc_silnika jednostka="cm^3"> 2979 </pojemnosc_silnika>
+				<uklad_cylindrow> R6 </uklad_cylindrow>
+				<srednie_spalanie jednostka="l/100km"> 12.8 </srednie_spalanie>
+				<moc_maksymalna jednostka="KM"> 231 </moc_maksymalna>
+				<maks_moment_obrotowy jednostka="Nm"> 300 </maks_moment_obrotowy>		
+			</dane_techniczne>
+			<pierwsza_rejestracja> 11.11.2007 </pierwsza_rejestracja>
+			<kolor> czerwony </kolor>
+			<wyposazenie> 
+				<dodatek> ABS </dodatek>
+				<dodatek> Elektryczne szyby przednie </dodatek>
+				<dodatek> Poduszka powietrzna kierowcy </dodatek>
+				<dodatek> Wspomaganie kierownicy </dodatek>
+				<dodatek> ASR (kontrola trakcji) </dodatek>
+				<dodatek> Czujnik deszczu </dodatek>
+				<dodatek> Czujniki parkowania tylne </dodatek>
+				<dodatek> Gniazdo AUX </dodatek>
+				<dodatek> Kamera cofania </dodatek>
+				<dodatek> Podgrzewane przednie siedzenia </dodatek>
+				<dodatek> CD </dodatek>
+				<dodatek> Elektrycznie ustawiane lusterka </dodatek>
+				<dodatek> Poduszka powietrzna pasażera </dodatek>
+				<dodatek> Alarm </dodatek>
+				<dodatek> Elektrochromatyczne lusterka boczne </dodatek>
+				<dodatek> Klimatyzacja dwustrefowa </dodatek>
+				<dodatek> System Start-Stop </dodatek>
+				<dodatek> Centralny zamek </dodatek>
+				<dodatek> Immobilizer </dodatek>
+				<dodatek> Radio fabryczne </dodatek>
+				<dodatek> Alufelgi </dodatek>
+				<dodatek> Czujniki parkowania przednie </dodatek>
+				<dodatek> ESP (stabilizacja toru jazdy) </dodatek>
+			</wyposazenie>
+			<cena jednostka="PLN"> 400.00 </cena>
+		</samochod>
+		
+		<samochod pozycja="P5" seriaID="S6">
+			<model> E63 </model>
+			<dane_techniczne>
+				<segment> E </segment>
+				<pojemnosc_silnika jednostka="cm^3"> 4999 </pojemnosc_silnika>
+				<uklad_cylindrow> V10 </uklad_cylindrow>
+				<srednie_spalanie jednostka="l/100km"> 18.1 </srednie_spalanie>
+				<moc_maksymalna jednostka="KM"> 507 </moc_maksymalna>
+				<maks_moment_obrotowy jednostka="Nm"> 520 </maks_moment_obrotowy>		
+			</dane_techniczne>
+			<pierwsza_rejestracja> 13.07.2009 </pierwsza_rejestracja>
+			<kolor> niebieski </kolor>
+			<wyposazenie> 
+				<dodatek> ABS </dodatek>
+				<dodatek> Elektryczne szyby przednie </dodatek>
+				<dodatek> Poduszka powietrzna kierowcy </dodatek>
+				<dodatek> Wspomaganie kierownicy </dodatek>
+				<dodatek> ASR (kontrola trakcji) </dodatek>
+				<dodatek> Czujnik deszczu </dodatek>
+				<dodatek> Czujniki parkowania tylne </dodatek>
+				<dodatek> Gniazdo AUX </dodatek>
+				<dodatek> Kamera cofania </dodatek>
+				<dodatek> Podgrzewane przednie siedzenia </dodatek>
+				<dodatek> CD </dodatek>
+				<dodatek> Elektrycznie ustawiane lusterka </dodatek>
+				<dodatek> Poduszka powietrzna pasażera </dodatek>
+				<dodatek> Alarm </dodatek>
+				<dodatek> Elektrochromatyczne lusterka boczne </dodatek>
+				<dodatek> Gniazdo USB </dodatek>
+				<dodatek> Klimatyzacja dwustrefowa </dodatek>
+				<dodatek> System Start-Stop </dodatek>
+				<dodatek> Centralny zamek </dodatek>
+				<dodatek> Immobilizer </dodatek>
+				<dodatek> Radio fabryczne </dodatek>
+				<dodatek> Alufelgi </dodatek>
+				<dodatek> Czujniki parkowania przednie </dodatek>
+				<dodatek> ESP (stabilizacja toru jazdy) </dodatek>
+			</wyposazenie>
+			<cena jednostka="PLN"> 700.00 </cena>
+		</samochod>
+		
+		<samochod pozycja="P6" seriaID="S6">
+			<model> F13 </model>
+			<dane_techniczne>
+				<segment> E </segment>
+				<pojemnosc_silnika jednostka="cm^3"> 4395 </pojemnosc_silnika>
+				<uklad_cylindrow> V8 </uklad_cylindrow>
+				<srednie_spalanie jednostka="l/100km"> 14.4 </srednie_spalanie>
+				<moc_maksymalna jednostka="KM"> 560 </moc_maksymalna>
+				<maks_moment_obrotowy jednostka="Nm"> 680 </maks_moment_obrotowy>		
+			</dane_techniczne>
+			<pierwsza_rejestracja> 13.10.2016 </pierwsza_rejestracja>
+			<kolor> czerwony </kolor>
+			<wyposazenie> 
+				<dodatek> ABS </dodatek>
+				<dodatek> Elektryczne szyby przednie </dodatek>
+				<dodatek> Poduszka powietrzna kierowcy </dodatek>
+				<dodatek> Wspomaganie kierownicy </dodatek>
+				<dodatek> ASR (kontrola trakcji) </dodatek>
+				<dodatek> Czujnik deszczu </dodatek>
+				<dodatek> Czujniki parkowania tylne </dodatek>
+				<dodatek> Gniazdo AUX </dodatek>
+				<dodatek> Kamera cofania </dodatek>
+				<dodatek> Podgrzewane przednie siedzenia </dodatek>
+				<dodatek> CD </dodatek>
+				<dodatek> Elektrycznie ustawiane lusterka </dodatek>
+				<dodatek> Poduszka powietrzna pasażera </dodatek>
+				<dodatek> Alarm </dodatek>
+				<dodatek> Asystent parkowania </dodatek>
+				<dodatek> Elektrochromatyczne lusterka boczne </dodatek>
+				<dodatek> Gniazdo USB </dodatek>
+				<dodatek> Klimatyzacja dwustrefowa </dodatek>
+				<dodatek> System Start-Stop </dodatek>
+				<dodatek> Centralny zamek </dodatek>
+				<dodatek> Immobilizer </dodatek>
+				<dodatek> Radio fabryczne </dodatek>
+				<dodatek> Alufelgi </dodatek>
+				<dodatek> Bluetooth </dodatek>
+				<dodatek> Czujniki parkowania przednie </dodatek>
+				<dodatek> ESP (stabilizacja toru jazdy) </dodatek>
+				<dodatek> Nawigacja GPS </dodatek>
+				<dodatek> Światła LED </dodatek>
+			</wyposazenie>
+			<cena jednostka="PLN"> 800.00 </cena>
+		</samochod>
+		
+		<samochod pozycja="P7" seriaID="S5">
+			<model> F90 </model>
+			<dane_techniczne>
+				<segment> E </segment>
+				<pojemnosc_silnika jednostka="cm^3"> 4395 </pojemnosc_silnika>
+				<uklad_cylindrow> V8 </uklad_cylindrow>
+				<srednie_spalanie jednostka="l/100km"> 14.5 </srednie_spalanie>
+				<moc_maksymalna jednostka="KM"> 600 </moc_maksymalna>
+				<maks_moment_obrotowy jednostka="Nm"> 750 </maks_moment_obrotowy>		
+			</dane_techniczne>
+			<pierwsza_rejestracja> 16.06.2019 </pierwsza_rejestracja>
+			<kolor> bialy </kolor>
+			<wyposazenie> 
+				<dodatek> ABS </dodatek>
+				<dodatek> Elektryczne szyby przednie </dodatek>
+				<dodatek> Poduszka powietrzna kierowcy </dodatek>
+				<dodatek> Wspomaganie kierownicy </dodatek>
+				<dodatek> ASR (kontrola trakcji) </dodatek>
+				<dodatek> Czujnik deszczu </dodatek>
+				<dodatek> Czujniki parkowania tylne </dodatek>
+				<dodatek> Gniazdo AUX </dodatek>
+				<dodatek> Kamera cofania </dodatek>
+				<dodatek> Podgrzewane przednie siedzenia </dodatek>
+				<dodatek> CD </dodatek>
+				<dodatek> Elektrycznie ustawiane lusterka </dodatek>
+				<dodatek> Poduszka powietrzna pasażera </dodatek>
+				<dodatek> Alarm </dodatek>
+				<dodatek> Asystent parkowania </dodatek>
+				<dodatek> Czujnik zmierzchu </dodatek>
+				<dodatek> Elektrochromatyczne lusterka boczne </dodatek>
+				<dodatek> Gniazdo USB </dodatek>
+				<dodatek> Klimatyzacja dwustrefowa </dodatek>
+				<dodatek> System Start-Stop </dodatek>
+				<dodatek> Centralny zamek </dodatek>
+				<dodatek> Immobilizer </dodatek>
+				<dodatek> Radio fabryczne </dodatek>
+				<dodatek> Alufelgi </dodatek>
+				<dodatek> Bluetooth </dodatek>
+				<dodatek> Czujniki parkowania przednie </dodatek>
+				<dodatek> ESP (stabilizacja toru jazdy) </dodatek>
+				<dodatek> HUD (wyświetlacz przezierny) </dodatek>
+				<dodatek> Nawigacja GPS </dodatek>
+				<dodatek> Światła LED </dodatek>
+			</wyposazenie>
+			<cena jednostka="PLN"> 1400.00 </cena>
+		</samochod>
+		
+		<samochod pozycja="P8" seriaID="S7">
+			<model> F10 </model>
+			<dane_techniczne>
+				<segment> E </segment>
+				<pojemnosc_silnika jednostka="cm^3"> 4395 </pojemnosc_silnika>
+				<uklad_cylindrow> V8 </uklad_cylindrow>
+				<srednie_spalanie jednostka="l/100km"> 14.5 </srednie_spalanie>
+				<moc_maksymalna jednostka="KM"> 407 </moc_maksymalna>
+				<maks_moment_obrotowy jednostka="Nm"> 600 </maks_moment_obrotowy>		
+			</dane_techniczne>
+			<pierwsza_rejestracja> 06.01.2016 </pierwsza_rejestracja>
+			<kolor> czarny </kolor>
+			<wyposazenie> 
+				<dodatek> ABS </dodatek>
+				<dodatek> Elektryczne szyby przednie </dodatek>
+				<dodatek> Poduszka powietrzna kierowcy </dodatek>
+				<dodatek> Wspomaganie kierownicy </dodatek>
+				<dodatek> ASR (kontrola trakcji) </dodatek>
+				<dodatek> Czujnik deszczu </dodatek>
+				<dodatek> Czujniki parkowania tylne </dodatek>
+				<dodatek> Gniazdo AUX </dodatek>
+				<dodatek> Kamera cofania </dodatek>
+				<dodatek> Podgrzewane przednie siedzenia </dodatek>
+				<dodatek> CD </dodatek>
+				<dodatek> Elektrycznie ustawiane lusterka </dodatek>
+				<dodatek> Poduszka powietrzna pasażera </dodatek>
+				<dodatek> Alarm </dodatek>
+				<dodatek> Asystent parkowania </dodatek>
+				<dodatek> Czujnik zmierzchu </dodatek>
+				<dodatek> Elektrochromatyczne lusterka boczne </dodatek>
+				<dodatek> Gniazdo USB </dodatek>
+				<dodatek> Klimatyzacja dwustrefowa </dodatek>
+				<dodatek> System Start-Stop </dodatek>
+				<dodatek> Centralny zamek </dodatek>
+				<dodatek> Immobilizer </dodatek>
+				<dodatek> Radio fabryczne </dodatek>
+				<dodatek> Alufelgi </dodatek>
+				<dodatek> Bluetooth </dodatek>
+				<dodatek> Czujniki parkowania przednie </dodatek>
+				<dodatek> ESP (stabilizacja toru jazdy) </dodatek>
+				<dodatek> Nawigacja GPS </dodatek>
+				<dodatek> Światła LED </dodatek>
+			</wyposazenie>
+			<cena jednostka="PLN"> 800.00 </cena>
+		</samochod>
+		
+		<samochod pozycja="P9" seriaID="S5">
+			<model> E60 </model>
+			<dane_techniczne>
+				<segment> E </segment>
+				<pojemnosc_silnika jednostka="cm^3"> 2996 </pojemnosc_silnika>
+				<uklad_cylindrow> R6 </uklad_cylindrow>
+				<srednie_spalanie jednostka="l/100km"> 11.3 </srednie_spalanie>
+				<moc_maksymalna jednostka="KM"> 218 </moc_maksymalna>
+				<maks_moment_obrotowy jednostka="Nm"> 270 </maks_moment_obrotowy>		
+			</dane_techniczne>
+			<pierwsza_rejestracja> 01.02.2007 </pierwsza_rejestracja>
+			<kolor> czarny </kolor>
+			<wyposazenie> 
+				<dodatek> ABS </dodatek>
+				<dodatek> Elektryczne szyby przednie </dodatek>
+				<dodatek> Poduszka powietrzna kierowcy </dodatek>
+				<dodatek> Wspomaganie kierownicy </dodatek>
+				<dodatek> ASR (kontrola trakcji) </dodatek>
+				<dodatek> Czujnik deszczu </dodatek>
+				<dodatek> Czujniki parkowania tylne </dodatek>
+				<dodatek> Kamera cofania </dodatek>
+				<dodatek> Podgrzewane przednie siedzenia </dodatek>
+				<dodatek> Elektrycznie ustawiane lusterka </dodatek>
+				<dodatek> Poduszka powietrzna pasażera </dodatek>
+				<dodatek> Alarm </dodatek>
+				<dodatek> Asystent parkowania </dodatek>
+				<dodatek> Elektrochromatyczne lusterka boczne </dodatek>
+				<dodatek> Klimatyzacja dwustrefowa </dodatek>
+				<dodatek> Centralny zamek </dodatek>
+				<dodatek> Immobilizer </dodatek>
+				<dodatek> Radio fabryczne </dodatek>
+				<dodatek> Alufelgi </dodatek>
+				<dodatek> ESP (stabilizacja toru jazdy) </dodatek>
+			</wyposazenie>
+			<cena jednostka="PLN"> 200.00 </cena>
+		</samochod>
+		
+		<samochod pozycja="P10" seriaID="S5">
+			<model> E39 </model>
+			<dane_techniczne>
+				<segment> E </segment>
+				<pojemnosc_silnika jednostka="cm^3"> 4941 </pojemnosc_silnika>
+				<uklad_cylindrow> V8 </uklad_cylindrow>
+				<srednie_spalanie jednostka="l/100km"> 18.2 </srednie_spalanie>
+				<moc_maksymalna jednostka="KM"> 400 </moc_maksymalna>
+				<maks_moment_obrotowy jednostka="Nm"> 500 </maks_moment_obrotowy>		
+			</dane_techniczne>
+			<pierwsza_rejestracja> 18.01.2003 </pierwsza_rejestracja>
+			<kolor> czarny </kolor>
+			<wyposazenie> 
+				<dodatek> ABS </dodatek>
+				<dodatek> Elektryczne szyby przednie </dodatek>
+				<dodatek> Poduszka powietrzna kierowcy </dodatek>
+				<dodatek> Wspomaganie kierownicy </dodatek>
+				<dodatek> ASR (kontrola trakcji) </dodatek>
+				<dodatek> Czujnik deszczu </dodatek>
+				<dodatek> Czujniki parkowania tylne </dodatek>
+				<dodatek> Podgrzewane przednie siedzenia </dodatek>
+				<dodatek> CD </dodatek>
+				<dodatek> Elektrycznie ustawiane lusterka </dodatek>
+				<dodatek> Poduszka powietrzna pasażera </dodatek>
+				<dodatek> Alarm </dodatek>
+				<dodatek> Elektrochromatyczne lusterka boczne </dodatek>
+				<dodatek> Gniazdo USB </dodatek>
+				<dodatek> Centralny zamek </dodatek>
+				<dodatek> Immobilizer </dodatek>
+				<dodatek> Radio fabryczne </dodatek>
+				<dodatek> Alufelgi </dodatek>
+				<dodatek> Czujniki parkowania przednie </dodatek>
+				<dodatek> ESP (stabilizacja toru jazdy) </dodatek>
+			</wyposazenie>
+			<cena jednostka="PLN"> 300.00 </cena>
+		</samochod>
+		
+		<samochod pozycja="P11" seriaID="S3">
+			<model> G20 </model>
+			<dane_techniczne>
+				<segment> D </segment>
+				<pojemnosc_silnika jednostka="cm^3"> 1998 </pojemnosc_silnika>
+				<uklad_cylindrow> R4 </uklad_cylindrow>
+				<srednie_spalanie jednostka="l/100km"> 8.7 </srednie_spalanie>
+				<moc_maksymalna jednostka="KM"> 184 </moc_maksymalna>
+				<maks_moment_obrotowy jednostka="Nm"> 300 </maks_moment_obrotowy>		
+			</dane_techniczne>
+			<pierwsza_rejestracja> 12.09.2020 </pierwsza_rejestracja>
+			<kolor> czarny </kolor>
+			<wyposazenie> 
+				<dodatek> ABS </dodatek>
+				<dodatek> Elektryczne szyby przednie </dodatek>
+				<dodatek> Poduszka powietrzna kierowcy </dodatek>
+				<dodatek> Wspomaganie kierownicy </dodatek>
+				<dodatek> ASR (kontrola trakcji) </dodatek>
+				<dodatek> Czujnik deszczu </dodatek>
+				<dodatek> Czujniki parkowania tylne </dodatek>
+				<dodatek> Gniazdo AUX </dodatek>
+				<dodatek> Kamera cofania </dodatek>
+				<dodatek> Podgrzewane przednie siedzenia </dodatek>
+				<dodatek> CD </dodatek>
+				<dodatek> Elektrycznie ustawiane lusterka </dodatek>
+				<dodatek> Poduszka powietrzna pasażera </dodatek>
+				<dodatek> Alarm </dodatek>
+				<dodatek> Asystent parkowania </dodatek>
+				<dodatek> Czujnik zmierzchu </dodatek>
+				<dodatek> Elektrochromatyczne lusterka boczne </dodatek>
+				<dodatek> Gniazdo USB </dodatek>
+				<dodatek> Klimatyzacja dwustrefowa </dodatek>
+				<dodatek> System Start-Stop </dodatek>
+				<dodatek> Centralny zamek </dodatek>
+				<dodatek> Immobilizer </dodatek>
+				<dodatek> Radio fabryczne </dodatek>
+				<dodatek> Alufelgi </dodatek>
+				<dodatek> Bluetooth </dodatek>
+				<dodatek> Czujniki parkowania przednie </dodatek>
+				<dodatek> ESP (stabilizacja toru jazdy) </dodatek>
+				<dodatek> HUD (wyświetlacz przezierny) </dodatek>
+				<dodatek> Nawigacja GPS </dodatek>
+				<dodatek> Światła LED </dodatek>
+			</wyposazenie>
+			<cena jednostka="PLN"> 150.00 </cena>
+		</samochod>
+		
+		<samochod pozycja="P12" seriaID="S3">
+			<model> F30 </model>
+			<dane_techniczne>
+				<segment> D </segment>
+				<pojemnosc_silnika jednostka="cm^3"> 2998 </pojemnosc_silnika>
+				<uklad_cylindrow> R6 </uklad_cylindrow>
+				<srednie_spalanie jednostka="l/100km"> 10.9 </srednie_spalanie>
+				<moc_maksymalna jednostka="KM"> 326 </moc_maksymalna>
+				<maks_moment_obrotowy jednostka="Nm"> 450 </maks_moment_obrotowy>		
+			</dane_techniczne>
+			<pierwsza_rejestracja> 20.01.2017 </pierwsza_rejestracja>
+			<kolor> bialy </kolor>
+			<wyposazenie> 
+				<dodatek> ABS </dodatek>
+				<dodatek> Elektryczne szyby przednie </dodatek>
+				<dodatek> Poduszka powietrzna kierowcy </dodatek>
+				<dodatek> Wspomaganie kierownicy </dodatek>
+				<dodatek> ASR (kontrola trakcji) </dodatek>
+				<dodatek> Czujnik deszczu </dodatek>
+				<dodatek> Czujniki parkowania tylne </dodatek>
+				<dodatek> Gniazdo AUX </dodatek>
+				<dodatek> Kamera cofania </dodatek>
+				<dodatek> Podgrzewane przednie siedzenia </dodatek>
+				<dodatek> CD </dodatek>
+				<dodatek> Elektrycznie ustawiane lusterka </dodatek>
+				<dodatek> Poduszka powietrzna pasażera </dodatek>
+				<dodatek> Alarm </dodatek>
+				<dodatek> Asystent parkowania </dodatek>
+				<dodatek> Czujnik zmierzchu </dodatek>
+				<dodatek> Elektrochromatyczne lusterka boczne </dodatek>
+				<dodatek> Gniazdo USB </dodatek>
+				<dodatek> Klimatyzacja dwustrefowa </dodatek>
+				<dodatek> System Start-Stop </dodatek>
+				<dodatek> Centralny zamek </dodatek>
+				<dodatek> Immobilizer </dodatek>
+				<dodatek> Radio fabryczne </dodatek>
+				<dodatek> Alufelgi </dodatek>
+				<dodatek> Bluetooth </dodatek>
+				<dodatek> Czujniki parkowania przednie </dodatek>
+				<dodatek> ESP (stabilizacja toru jazdy) </dodatek>
+				<dodatek> HUD (wyświetlacz przezierny) </dodatek>
+				<dodatek> Nawigacja GPS </dodatek>
+				<dodatek> Światła LED </dodatek>
+			</wyposazenie>
+			<cena jednostka="PLN"> 250.00 </cena>
+		</samochod>
+		
+		<samochod pozycja="P13" seriaID="S3">
+			<model> E90 </model>
+			<dane_techniczne>
+				<segment> D </segment>
+				<pojemnosc_silnika jednostka="cm^3"> 1995 </pojemnosc_silnika>
+				<uklad_cylindrow> R4 </uklad_cylindrow>
+				<srednie_spalanie jednostka="l/100km"> 8.9 </srednie_spalanie>
+				<moc_maksymalna jednostka="KM"> 150 </moc_maksymalna>
+				<maks_moment_obrotowy jednostka="Nm"> 200 </maks_moment_obrotowy>		
+			</dane_techniczne>
+			<pierwsza_rejestracja> 17.05.2011 </pierwsza_rejestracja>
+			<kolor> niebieski </kolor>
+			<wyposazenie> 
+				<dodatek> ABS </dodatek>
+				<dodatek> Elektryczne szyby przednie </dodatek>
+				<dodatek> Poduszka powietrzna kierowcy </dodatek>
+				<dodatek> Wspomaganie kierownicy </dodatek>
+				<dodatek> ASR (kontrola trakcji) </dodatek>
+				<dodatek> Czujnik deszczu </dodatek>
+				<dodatek> Czujniki parkowania tylne </dodatek>
+				<dodatek> Gniazdo AUX </dodatek>
+				<dodatek> Kamera cofania </dodatek>
+				<dodatek> Podgrzewane przednie siedzenia </dodatek>
+				<dodatek> CD </dodatek>
+				<dodatek> Elektrycznie ustawiane lusterka </dodatek>
+				<dodatek> Poduszka powietrzna pasażera </dodatek>
+				<dodatek> Alarm </dodatek>
+				<dodatek> Elektrochromatyczne lusterka boczne </dodatek>
+				<dodatek> Gniazdo USB </dodatek>
+				<dodatek> Klimatyzacja dwustrefowa </dodatek>
+				<dodatek> Centralny zamek </dodatek>
+				<dodatek> Immobilizer </dodatek>
+				<dodatek> Radio fabryczne </dodatek>
+				<dodatek> Alufelgi </dodatek>
+				<dodatek> Czujniki parkowania przednie </dodatek>
+				<dodatek> ESP (stabilizacja toru jazdy) </dodatek>
+				<dodatek> Nawigacja GPS </dodatek>
+			</wyposazenie>
+			<cena jednostka="PLN"> 100.00 </cena>
+		</samochod>
+		
+		<samochod pozycja="P14" seriaID="S2">
+			<model> F22 </model>
+			<dane_techniczne>
+				<segment> C </segment>
+				<pojemnosc_silnika jednostka="cm^3"> 1499 </pojemnosc_silnika>
+				<uklad_cylindrow> R4 </uklad_cylindrow>
+				<srednie_spalanie jednostka="l/100km"> 8.2 </srednie_spalanie>
+				<moc_maksymalna jednostka="KM"> 136 </moc_maksymalna>
+				<maks_moment_obrotowy jednostka="Nm"> 220 </maks_moment_obrotowy>		
+			</dane_techniczne>
+			<pierwsza_rejestracja> 20.03.2016 </pierwsza_rejestracja>
+			<kolor> niebieski </kolor>
+			<wyposazenie> 
+				<dodatek> ABS </dodatek>
+				<dodatek> Elektryczne szyby przednie </dodatek>
+				<dodatek> Poduszka powietrzna kierowcy </dodatek>
+				<dodatek> Wspomaganie kierownicy </dodatek>
+				<dodatek> ASR (kontrola trakcji) </dodatek>
+				<dodatek> Czujnik deszczu </dodatek>
+				<dodatek> Czujniki parkowania tylne </dodatek>
+				<dodatek> Gniazdo AUX </dodatek>
+				<dodatek> Kamera cofania </dodatek>
+				<dodatek> Podgrzewane przednie siedzenia </dodatek>
+				<dodatek> CD </dodatek>
+				<dodatek> Elektrycznie ustawiane lusterka </dodatek>
+				<dodatek> Poduszka powietrzna pasażera </dodatek>
+				<dodatek> Alarm </dodatek>
+				<dodatek> Asystent parkowania </dodatek>
+				<dodatek> Czujnik zmierzchu </dodatek>
+				<dodatek> Elektrochromatyczne lusterka boczne </dodatek>
+				<dodatek> Gniazdo USB </dodatek>
+				<dodatek> Klimatyzacja dwustrefowa </dodatek>
+				<dodatek> System Start-Stop </dodatek>
+				<dodatek> Centralny zamek </dodatek>
+				<dodatek> Immobilizer </dodatek>
+				<dodatek> Radio fabryczne </dodatek>
+				<dodatek> Alufelgi </dodatek>
+				<dodatek> Bluetooth </dodatek>
+				<dodatek> Czujniki parkowania przednie </dodatek>
+				<dodatek> ESP (stabilizacja toru jazdy) </dodatek>
+				<dodatek> HUD (wyświetlacz przezierny) </dodatek>
+				<dodatek> Nawigacja GPS </dodatek>
+				<dodatek> Światła LED </dodatek>
+			</wyposazenie>
+			<cena jednostka="PLN"> 100.00 </cena>
+		</samochod>
+		
+		<samochod pozycja="P15" seriaID="S2">
+			<model> F87 </model>
+			<dane_techniczne>
+				<segment> C </segment>
+				<pojemnosc_silnika jednostka="cm^3"> 2979 </pojemnosc_silnika>
+				<uklad_cylindrow> R6 </uklad_cylindrow>
+				<srednie_spalanie jednostka="l/100km"> 12.1 </srednie_spalanie>
+				<moc_maksymalna jednostka="KM"> 450 </moc_maksymalna>
+				<maks_moment_obrotowy jednostka="Nm"> 550 </maks_moment_obrotowy>		
+			</dane_techniczne>
+			<pierwsza_rejestracja> 16.04.2020 </pierwsza_rejestracja>
+			<kolor> bialy </kolor>
+			<wyposazenie> 
+				<dodatek> ABS </dodatek>
+				<dodatek> Elektryczne szyby przednie </dodatek>
+				<dodatek> Poduszka powietrzna kierowcy </dodatek>
+				<dodatek> Wspomaganie kierownicy </dodatek>
+				<dodatek> ASR (kontrola trakcji) </dodatek>
+				<dodatek> Czujnik deszczu </dodatek>
+				<dodatek> Czujniki parkowania tylne </dodatek>
+				<dodatek> Gniazdo AUX </dodatek>
+				<dodatek> Kamera cofania </dodatek>
+				<dodatek> Podgrzewane przednie siedzenia </dodatek>
+				<dodatek> CD </dodatek>
+				<dodatek> Elektrycznie ustawiane lusterka </dodatek>
+				<dodatek> Poduszka powietrzna pasażera </dodatek>
+				<dodatek> Alarm </dodatek>
+				<dodatek> Asystent parkowania </dodatek>
+				<dodatek> Czujnik zmierzchu </dodatek>
+				<dodatek> Elektrochromatyczne lusterka boczne </dodatek>
+				<dodatek> Gniazdo USB </dodatek>
+				<dodatek> Klimatyzacja dwustrefowa </dodatek>
+				<dodatek> System Start-Stop </dodatek>
+				<dodatek> Centralny zamek </dodatek>
+				<dodatek> Immobilizer </dodatek>
+				<dodatek> Radio fabryczne </dodatek>
+				<dodatek> Alufelgi </dodatek>
+				<dodatek> Bluetooth </dodatek>
+				<dodatek> Czujniki parkowania przednie </dodatek>
+				<dodatek> ESP (stabilizacja toru jazdy) </dodatek>
+				<dodatek> HUD (wyświetlacz przezierny) </dodatek>
+				<dodatek> Nawigacja GPS </dodatek>
+				<dodatek> Światła LED </dodatek>
+			</wyposazenie>
+			<cena jednostka="PLN"> 900.00 </cena>
+		</samochod>
+		
+		<samochod pozycja="P16" seriaID="S1">
+			<model> F20 </model>
+			<dane_techniczne>
+				<segment> C </segment>
+				<pojemnosc_silnika jednostka="cm^3"> 1598 </pojemnosc_silnika>
+				<uklad_cylindrow> R4 </uklad_cylindrow>
+				<srednie_spalanie jednostka="l/100km"> 8.0 </srednie_spalanie>
+				<moc_maksymalna jednostka="KM"> 102 </moc_maksymalna>
+				<maks_moment_obrotowy jednostka="Nm"> 180 </maks_moment_obrotowy>		
+			</dane_techniczne>
+			<pierwsza_rejestracja> 22.04.2018 </pierwsza_rejestracja>
+			<kolor> czarny </kolor>
+			<wyposazenie> 
+				<dodatek> ABS </dodatek>
+				<dodatek> Elektryczne szyby przednie </dodatek>
+				<dodatek> Poduszka powietrzna kierowcy </dodatek>
+				<dodatek> Wspomaganie kierownicy </dodatek>
+				<dodatek> ASR (kontrola trakcji) </dodatek>
+				<dodatek> Czujnik deszczu </dodatek>
+				<dodatek> Czujniki parkowania tylne </dodatek>
+				<dodatek> Gniazdo AUX </dodatek>
+				<dodatek> Kamera cofania </dodatek>
+				<dodatek> Podgrzewane przednie siedzenia </dodatek>
+				<dodatek> CD </dodatek>
+				<dodatek> Elektrycznie ustawiane lusterka </dodatek>
+				<dodatek> Poduszka powietrzna pasażera </dodatek>
+				<dodatek> Alarm </dodatek>
+				<dodatek> Asystent parkowania </dodatek>
+				<dodatek> Czujnik zmierzchu </dodatek>
+				<dodatek> Elektrochromatyczne lusterka boczne </dodatek>
+				<dodatek> Gniazdo USB </dodatek>
+				<dodatek> Klimatyzacja dwustrefowa </dodatek>
+				<dodatek> System Start-Stop </dodatek>
+				<dodatek> Centralny zamek </dodatek>
+				<dodatek> Immobilizer </dodatek>
+				<dodatek> Radio fabryczne </dodatek>
+				<dodatek> Alufelgi </dodatek>
+				<dodatek> Bluetooth </dodatek>
+				<dodatek> Czujniki parkowania przednie </dodatek>
+				<dodatek> ESP (stabilizacja toru jazdy) </dodatek>
+				<dodatek> HUD (wyświetlacz przezierny) </dodatek>
+				<dodatek> Nawigacja GPS </dodatek>
+				<dodatek> Światła LED </dodatek>
+			</wyposazenie>
+			<cena jednostka="PLN"> 70.00 </cena>
+		</samochod>
+		
+		<samochod pozycja="P17" seriaID="S4">
+			<model> F32 </model>
+			<dane_techniczne>
+				<segment> D </segment>
+				<pojemnosc_silnika jednostka="cm^3"> 1997 </pojemnosc_silnika>
+				<uklad_cylindrow> R4 </uklad_cylindrow>
+				<srednie_spalanie jednostka="l/100km"> 9.5 </srednie_spalanie>
+				<moc_maksymalna jednostka="KM"> 184 </moc_maksymalna>
+				<maks_moment_obrotowy jednostka="Nm"> 270 </maks_moment_obrotowy>		
+			</dane_techniczne>
+			<pierwsza_rejestracja> 23.09.2018 </pierwsza_rejestracja>
+			<kolor> czarny </kolor>
+			<wyposazenie> 
+				<dodatek> ABS </dodatek>
+				<dodatek> Elektryczne szyby przednie </dodatek>
+				<dodatek> Poduszka powietrzna kierowcy </dodatek>
+				<dodatek> Wspomaganie kierownicy </dodatek>
+				<dodatek> ASR (kontrola trakcji) </dodatek>
+				<dodatek> Czujnik deszczu </dodatek>
+				<dodatek> Czujniki parkowania tylne </dodatek>
+				<dodatek> Gniazdo AUX </dodatek>
+				<dodatek> Kamera cofania </dodatek>
+				<dodatek> Podgrzewane przednie siedzenia </dodatek>
+				<dodatek> CD </dodatek>
+				<dodatek> Elektrycznie ustawiane lusterka </dodatek>
+				<dodatek> Poduszka powietrzna pasażera </dodatek>
+				<dodatek> Alarm </dodatek>
+				<dodatek> Asystent parkowania </dodatek>
+				<dodatek> Czujnik zmierzchu </dodatek>
+				<dodatek> Elektrochromatyczne lusterka boczne </dodatek>
+				<dodatek> Gniazdo USB </dodatek>
+				<dodatek> Klimatyzacja dwustrefowa </dodatek>
+				<dodatek> System Start-Stop </dodatek>
+				<dodatek> Centralny zamek </dodatek>
+				<dodatek> Immobilizer </dodatek>
+				<dodatek> Radio fabryczne </dodatek>
+				<dodatek> Alufelgi </dodatek>
+				<dodatek> Bluetooth </dodatek>
+				<dodatek> Czujniki parkowania przednie </dodatek>
+				<dodatek> ESP (stabilizacja toru jazdy) </dodatek>
+				<dodatek> HUD (wyświetlacz przezierny) </dodatek>
+				<dodatek> Nawigacja GPS </dodatek>
+				<dodatek> Światła LED </dodatek>
+			</wyposazenie>
+			<cena jednostka="PLN"> 200.00 </cena>
+		</samochod>
+		
+		<samochod pozycja="P18" seriaID="S5">
+			<model> G30 </model>
+			<dane_techniczne>
+				<segment> E </segment>
+				<pojemnosc_silnika jednostka="cm^3"> 1998 </pojemnosc_silnika>
+				<uklad_cylindrow> R4 </uklad_cylindrow>
+				<srednie_spalanie jednostka="l/100km"> 8.1 </srednie_spalanie>
+				<moc_maksymalna jednostka="KM"> 184 </moc_maksymalna>
+				<maks_moment_obrotowy jednostka="Nm"> 290 </maks_moment_obrotowy>		
+			</dane_techniczne>
+			<pierwsza_rejestracja> 06.06.2019 </pierwsza_rejestracja>
+			<kolor> bialy </kolor>
+			<wyposazenie> 
+				<dodatek> ABS </dodatek>
+				<dodatek> Elektryczne szyby przednie </dodatek>
+				<dodatek> Poduszka powietrzna kierowcy </dodatek>
+				<dodatek> Wspomaganie kierownicy </dodatek>
+				<dodatek> ASR (kontrola trakcji) </dodatek>
+				<dodatek> Czujnik deszczu </dodatek>
+				<dodatek> Czujniki parkowania tylne </dodatek>
+				<dodatek> Gniazdo AUX </dodatek>
+				<dodatek> Kamera cofania </dodatek>
+				<dodatek> Podgrzewane przednie siedzenia </dodatek>
+				<dodatek> CD </dodatek>
+				<dodatek> Elektrycznie ustawiane lusterka </dodatek>
+				<dodatek> Poduszka powietrzna pasażera </dodatek>
+				<dodatek> Alarm </dodatek>
+				<dodatek> Asystent parkowania </dodatek>
+				<dodatek> Czujnik zmierzchu </dodatek>
+				<dodatek> Elektrochromatyczne lusterka boczne </dodatek>
+				<dodatek> Gniazdo USB </dodatek>
+				<dodatek> Klimatyzacja dwustrefowa </dodatek>
+				<dodatek> System Start-Stop </dodatek>
+				<dodatek> Centralny zamek </dodatek>
+				<dodatek> Immobilizer </dodatek>
+				<dodatek> Radio fabryczne </dodatek>
+				<dodatek> Alufelgi </dodatek>
+				<dodatek> Bluetooth </dodatek>
+				<dodatek> Czujniki parkowania przednie </dodatek>
+				<dodatek> ESP (stabilizacja toru jazdy) </dodatek>
+				<dodatek> HUD (wyświetlacz przezierny) </dodatek>
+				<dodatek> Nawigacja GPS </dodatek>
+				<dodatek> Światła LED </dodatek>
+			</wyposazenie>
+			<cena jednostka="PLN"> 200.00 </cena>
+		</samochod>
+		
+		<samochod pozycja="P19" seriaID="S8">
+			<model> G15 </model>
+			<dane_techniczne>
+				<segment> E </segment>
+				<pojemnosc_silnika jednostka="cm^3"> 2993 </pojemnosc_silnika>
+				<uklad_cylindrow> R8 </uklad_cylindrow>
+				<srednie_spalanie jednostka="l/100km"> 10.0 </srednie_spalanie>
+				<moc_maksymalna jednostka="KM"> 320 </moc_maksymalna>
+				<maks_moment_obrotowy jednostka="Nm"> 680 </maks_moment_obrotowy>		
+			</dane_techniczne>
+			<pierwsza_rejestracja> 03.09.2019 </pierwsza_rejestracja>
+			<kolor> czerwony </kolor>
+			<wyposazenie> 
+				<dodatek> ABS </dodatek>
+				<dodatek> Elektryczne szyby przednie </dodatek>
+				<dodatek> Poduszka powietrzna kierowcy </dodatek>
+				<dodatek> Wspomaganie kierownicy </dodatek>
+				<dodatek> ASR (kontrola trakcji) </dodatek>
+				<dodatek> Czujnik deszczu </dodatek>
+				<dodatek> Czujniki parkowania tylne </dodatek>
+				<dodatek> Gniazdo AUX </dodatek>
+				<dodatek> Kamera cofania </dodatek>
+				<dodatek> Podgrzewane przednie siedzenia </dodatek>
+				<dodatek> CD </dodatek>
+				<dodatek> Elektrycznie ustawiane lusterka </dodatek>
+				<dodatek> Poduszka powietrzna pasażera </dodatek>
+				<dodatek> Alarm </dodatek>
+				<dodatek> Asystent parkowania </dodatek>
+				<dodatek> Czujnik zmierzchu </dodatek>
+				<dodatek> Elektrochromatyczne lusterka boczne </dodatek>
+				<dodatek> Gniazdo USB </dodatek>
+				<dodatek> Klimatyzacja dwustrefowa </dodatek>
+				<dodatek> System Start-Stop </dodatek>
+				<dodatek> Centralny zamek </dodatek>
+				<dodatek> Immobilizer </dodatek>
+				<dodatek> Radio fabryczne </dodatek>
+				<dodatek> Alufelgi </dodatek>
+				<dodatek> Bluetooth </dodatek>
+				<dodatek> Czujniki parkowania przednie </dodatek>
+				<dodatek> ESP (stabilizacja toru jazdy) </dodatek>
+				<dodatek> HUD (wyświetlacz przezierny) </dodatek>
+				<dodatek> Nawigacja GPS </dodatek>
+				<dodatek> Światła LED </dodatek>
+			</wyposazenie>
+			<cena jednostka="PLN"> 400.00 </cena>
+		</samochod>
+		
+		<samochod pozycja="P20" seriaID="S5">
+			<model> E60 </model>
+			<dane_techniczne>
+				<segment> E </segment>
+				<pojemnosc_silnika jednostka="cm^3"> 2979 </pojemnosc_silnika>
+				<uklad_cylindrow> R6 </uklad_cylindrow>
+				<srednie_spalanie jednostka="l/100km"> 10.1 </srednie_spalanie>
+				<moc_maksymalna jednostka="KM"> 231 </moc_maksymalna>
+				<maks_moment_obrotowy jednostka="Nm"> 300 </maks_moment_obrotowy>		
+			</dane_techniczne>
+			<pierwsza_rejestracja> 09.09.2008 </pierwsza_rejestracja>
+			<kolor> czerwony </kolor>
+			<wyposazenie> 
+				<dodatek> ABS </dodatek>
+				<dodatek> Elektryczne szyby przednie </dodatek>
+				<dodatek> Poduszka powietrzna kierowcy </dodatek>
+				<dodatek> Wspomaganie kierownicy </dodatek>
+				<dodatek> ASR (kontrola trakcji) </dodatek>
+				<dodatek> Czujnik deszczu </dodatek>
+				<dodatek> Czujniki parkowania tylne </dodatek>
+				<dodatek> Gniazdo AUX </dodatek>
+				<dodatek> Kamera cofania </dodatek>
+				<dodatek> Podgrzewane przednie siedzenia </dodatek>
+				<dodatek> CD </dodatek>
+				<dodatek> Elektrycznie ustawiane lusterka </dodatek>
+				<dodatek> Poduszka powietrzna pasażera </dodatek>
+				<dodatek> Alarm </dodatek>
+				<dodatek> Elektrochromatyczne lusterka boczne </dodatek>
+				<dodatek> Gniazdo USB </dodatek>
+				<dodatek> Klimatyzacja dwustrefowa </dodatek>
+				<dodatek> Centralny zamek </dodatek>
+				<dodatek> Immobilizer </dodatek>
+				<dodatek> Radio fabryczne </dodatek>
+				<dodatek> Alufelgi </dodatek>
+				<dodatek> Bluetooth </dodatek>
+				<dodatek> ESP (stabilizacja toru jazdy) </dodatek>
+				<dodatek> Nawigacja GPS </dodatek>
+			</wyposazenie>
+			<cena jednostka="PLN"> 200.00 </cena>
+		</samochod>
+		
+		<samochod pozycja="P21" seriaID="S3">
+			<model> F30 </model>
+			<dane_techniczne>
+				<segment> D </segment>
+				<pojemnosc_silnika jednostka="cm^3"> 1995 </pojemnosc_silnika>
+				<uklad_cylindrow> R4 </uklad_cylindrow>
+				<srednie_spalanie jednostka="l/100km"> 6.1 </srednie_spalanie>
+				<moc_maksymalna jednostka="KM"> 116 </moc_maksymalna>
+				<maks_moment_obrotowy jednostka="Nm"> 260 </maks_moment_obrotowy>		
+			</dane_techniczne>
+			<pierwsza_rejestracja> 08.04.2017 </pierwsza_rejestracja>
+			<kolor> niebieski </kolor>
+			<wyposazenie> 
+				<dodatek> ABS </dodatek>
+				<dodatek> Elektryczne szyby przednie </dodatek>
+				<dodatek> Poduszka powietrzna kierowcy </dodatek>
+				<dodatek> Wspomaganie kierownicy </dodatek>
+				<dodatek> ASR (kontrola trakcji) </dodatek>
+				<dodatek> Czujnik deszczu </dodatek>
+				<dodatek> Czujniki parkowania tylne </dodatek>
+				<dodatek> Gniazdo AUX </dodatek>
+				<dodatek> Kamera cofania </dodatek>
+				<dodatek> Podgrzewane przednie siedzenia </dodatek>
+				<dodatek> CD </dodatek>
+				<dodatek> Elektrycznie ustawiane lusterka </dodatek>
+				<dodatek> Poduszka powietrzna pasażera </dodatek>
+				<dodatek> Alarm </dodatek>
+				<dodatek> Asystent parkowania </dodatek>
+				<dodatek> Czujnik zmierzchu </dodatek>
+				<dodatek> Elektrochromatyczne lusterka boczne </dodatek>
+				<dodatek> Gniazdo USB </dodatek>
+				<dodatek> Klimatyzacja dwustrefowa </dodatek>
+				<dodatek> System Start-Stop </dodatek>
+				<dodatek> Centralny zamek </dodatek>
+				<dodatek> Immobilizer </dodatek>
+				<dodatek> Radio fabryczne </dodatek>
+				<dodatek> Alufelgi </dodatek>
+				<dodatek> Bluetooth </dodatek>
+				<dodatek> Czujniki parkowania przednie </dodatek>
+				<dodatek> ESP (stabilizacja toru jazdy) </dodatek>
+				<dodatek> HUD (wyświetlacz przezierny) </dodatek>
+				<dodatek> Nawigacja GPS </dodatek>
+				<dodatek> Światła LED </dodatek>
+			</wyposazenie>
+			<cena jednostka="PLN"> 100.00 </cena>
+		</samochod>
+		
+		<samochod pozycja="P22" seriaID="S3">
+			<model> F30 </model>
+			<dane_techniczne>
+				<segment> D </segment>
+				<pojemnosc_silnika jednostka="cm^3"> 1998 </pojemnosc_silnika>
+				<uklad_cylindrow> R4 </uklad_cylindrow>
+				<srednie_spalanie jednostka="l/100km"> 8.7 </srednie_spalanie>
+				<moc_maksymalna jednostka="KM"> 184 </moc_maksymalna>
+				<maks_moment_obrotowy jednostka="Nm"> 290 </maks_moment_obrotowy>		
+			</dane_techniczne>
+			<pierwsza_rejestracja> 05.08.2017 </pierwsza_rejestracja>
+			<kolor> niebieski </kolor>
+			<wyposazenie> 
+				<dodatek> ABS </dodatek>
+				<dodatek> Elektryczne szyby przednie </dodatek>
+				<dodatek> Poduszka powietrzna kierowcy </dodatek>
+				<dodatek> Wspomaganie kierownicy </dodatek>
+				<dodatek> ASR (kontrola trakcji) </dodatek>
+				<dodatek> Czujnik deszczu </dodatek>
+				<dodatek> Czujniki parkowania tylne </dodatek>
+				<dodatek> Gniazdo AUX </dodatek>
+				<dodatek> Kamera cofania </dodatek>
+				<dodatek> Podgrzewane przednie siedzenia </dodatek>
+				<dodatek> CD </dodatek>
+				<dodatek> Elektrycznie ustawiane lusterka </dodatek>
+				<dodatek> Poduszka powietrzna pasażera </dodatek>
+				<dodatek> Alarm </dodatek>
+				<dodatek> Asystent parkowania </dodatek>
+				<dodatek> Czujnik zmierzchu </dodatek>
+				<dodatek> Elektrochromatyczne lusterka boczne </dodatek>
+				<dodatek> Gniazdo USB </dodatek>
+				<dodatek> Klimatyzacja dwustrefowa </dodatek>
+				<dodatek> System Start-Stop </dodatek>
+				<dodatek> Centralny zamek </dodatek>
+				<dodatek> Immobilizer </dodatek>
+				<dodatek> Radio fabryczne </dodatek>
+				<dodatek> Alufelgi </dodatek>
+				<dodatek> Bluetooth </dodatek>
+				<dodatek> Czujniki parkowania przednie </dodatek>
+				<dodatek> ESP (stabilizacja toru jazdy) </dodatek>
+				<dodatek> HUD (wyświetlacz przezierny) </dodatek>
+				<dodatek> Nawigacja GPS </dodatek>
+				<dodatek> Światła LED </dodatek>
+			</wyposazenie>
+			<cena jednostka="PLN"> 200.00 </cena>
+		</samochod>
+		
+		<samochod pozycja="P23" seriaID="S3">
+			<model> F30 </model>
+			<dane_techniczne>
+				<segment> D </segment>
+				<pojemnosc_silnika jednostka="cm^3"> 1995 </pojemnosc_silnika>
+				<uklad_cylindrow> R4 </uklad_cylindrow>
+				<srednie_spalanie jednostka="l/100km"> 6.3 </srednie_spalanie>
+				<moc_maksymalna jednostka="KM"> 218 </moc_maksymalna>
+				<maks_moment_obrotowy jednostka="Nm"> 450 </maks_moment_obrotowy>		
+			</dane_techniczne>
+			<pierwsza_rejestracja> 11.01.2017 </pierwsza_rejestracja>
+			<kolor> czarny </kolor>
+			<wyposazenie> 
+				<dodatek> ABS </dodatek>
+				<dodatek> Elektryczne szyby przednie </dodatek>
+				<dodatek> Poduszka powietrzna kierowcy </dodatek>
+				<dodatek> Wspomaganie kierownicy </dodatek>
+				<dodatek> ASR (kontrola trakcji) </dodatek>
+				<dodatek> Czujnik deszczu </dodatek>
+				<dodatek> Czujniki parkowania tylne </dodatek>
+				<dodatek> Gniazdo AUX </dodatek>
+				<dodatek> Kamera cofania </dodatek>
+				<dodatek> Podgrzewane przednie siedzenia </dodatek>
+				<dodatek> CD </dodatek>
+				<dodatek> Elektrycznie ustawiane lusterka </dodatek>
+				<dodatek> Poduszka powietrzna pasażera </dodatek>
+				<dodatek> Alarm </dodatek>
+				<dodatek> Asystent parkowania </dodatek>
+				<dodatek> Czujnik zmierzchu </dodatek>
+				<dodatek> Elektrochromatyczne lusterka boczne </dodatek>
+				<dodatek> Gniazdo USB </dodatek>
+				<dodatek> Klimatyzacja dwustrefowa </dodatek>
+				<dodatek> System Start-Stop </dodatek>
+				<dodatek> Centralny zamek </dodatek>
+				<dodatek> Immobilizer </dodatek>
+				<dodatek> Radio fabryczne </dodatek>
+				<dodatek> Alufelgi </dodatek>
+				<dodatek> Bluetooth </dodatek>
+				<dodatek> Czujniki parkowania przednie </dodatek>
+				<dodatek> ESP (stabilizacja toru jazdy) </dodatek>
+				<dodatek> HUD (wyświetlacz przezierny) </dodatek>
+				<dodatek> Nawigacja GPS </dodatek>
+				<dodatek> Światła LED </dodatek>
+			</wyposazenie>
+			<cena jednostka="PLN"> 200.00 </cena>
+		</samochod>
+		
+		<samochod pozycja="P24" seriaID="S3">
+			<model> F30 </model>
+			<dane_techniczne>
+				<segment> D </segment>
+				<pojemnosc_silnika jednostka="cm^3"> 2993 </pojemnosc_silnika>
+				<uklad_cylindrow> R6 </uklad_cylindrow>
+				<srednie_spalanie jednostka="l/100km"> 7.7 </srednie_spalanie>
+				<moc_maksymalna jednostka="KM"> 313 </moc_maksymalna>
+				<maks_moment_obrotowy jednostka="Nm"> 630 </maks_moment_obrotowy>		
+			</dane_techniczne>
+			<pierwsza_rejestracja> 05.06.2017 </pierwsza_rejestracja>
+			<kolor> czarny </kolor>
+			<wyposazenie> 
+				<dodatek> ABS </dodatek>
+				<dodatek> Elektryczne szyby przednie </dodatek>
+				<dodatek> Poduszka powietrzna kierowcy </dodatek>
+				<dodatek> Wspomaganie kierownicy </dodatek>
+				<dodatek> ASR (kontrola trakcji) </dodatek>
+				<dodatek> Czujnik deszczu </dodatek>
+				<dodatek> Czujniki parkowania tylne </dodatek>
+				<dodatek> Gniazdo AUX </dodatek>
+				<dodatek> Kamera cofania </dodatek>
+				<dodatek> Podgrzewane przednie siedzenia </dodatek>
+				<dodatek> CD </dodatek>
+				<dodatek> Elektrycznie ustawiane lusterka </dodatek>
+				<dodatek> Poduszka powietrzna pasażera </dodatek>
+				<dodatek> Alarm </dodatek>
+				<dodatek> Asystent parkowania </dodatek>
+				<dodatek> Czujnik zmierzchu </dodatek>
+				<dodatek> Elektrochromatyczne lusterka boczne </dodatek>
+				<dodatek> Gniazdo USB </dodatek>
+				<dodatek> Klimatyzacja dwustrefowa </dodatek>
+				<dodatek> System Start-Stop </dodatek>
+				<dodatek> Centralny zamek </dodatek>
+				<dodatek> Immobilizer </dodatek>
+				<dodatek> Radio fabryczne </dodatek>
+				<dodatek> Alufelgi </dodatek>
+				<dodatek> Bluetooth </dodatek>
+				<dodatek> Czujniki parkowania przednie </dodatek>
+				<dodatek> ESP (stabilizacja toru jazdy) </dodatek>
+				<dodatek> HUD (wyświetlacz przezierny) </dodatek>
+				<dodatek> Nawigacja GPS </dodatek>
+				<dodatek> Światła LED </dodatek>
+			</wyposazenie>
+			<cena jednostka="PLN"> 300.00 </cena>
+		</samochod>
+		
+		<samochod pozycja="P25" seriaID="S3">
+			<model> E90 </model>
+			<dane_techniczne>
+				<segment> D </segment>
+				<pojemnosc_silnika jednostka="cm^3"> 1995 </pojemnosc_silnika>
+				<uklad_cylindrow> R4 </uklad_cylindrow>
+				<srednie_spalanie jednostka="l/100km"> 6.5 </srednie_spalanie>
+				<moc_maksymalna jednostka="KM"> 122 </moc_maksymalna>
+				<maks_moment_obrotowy jednostka="Nm"> 280 </maks_moment_obrotowy>		
+			</dane_techniczne>
+			<pierwsza_rejestracja> 09.12.2011 </pierwsza_rejestracja>
+			<kolor> bialy </kolor>
+			<wyposazenie> 
+				<dodatek> ABS </dodatek>
+				<dodatek> Elektryczne szyby przednie </dodatek>
+				<dodatek> Poduszka powietrzna kierowcy </dodatek>
+				<dodatek> Wspomaganie kierownicy </dodatek>
+				<dodatek> ASR (kontrola trakcji) </dodatek>
+				<dodatek> Czujnik deszczu </dodatek>
+				<dodatek> Czujniki parkowania tylne </dodatek>
+				<dodatek> Gniazdo AUX </dodatek>
+				<dodatek> Kamera cofania </dodatek>
+				<dodatek> Podgrzewane przednie siedzenia </dodatek>
+				<dodatek> CD </dodatek>
+				<dodatek> Elektrycznie ustawiane lusterka </dodatek>
+				<dodatek> Poduszka powietrzna pasażera </dodatek>
+				<dodatek> Alarm </dodatek>
+				<dodatek> Gniazdo USB </dodatek>
+				<dodatek> Klimatyzacja dwustrefowa </dodatek>
+				<dodatek> Centralny zamek </dodatek>
+				<dodatek> Immobilizer </dodatek>
+				<dodatek> Radio fabryczne </dodatek>
+				<dodatek> Alufelgi </dodatek>
+				<dodatek> Bluetooth </dodatek>
+				<dodatek> Czujniki parkowania przednie </dodatek>
+				<dodatek> ESP (stabilizacja toru jazdy) </dodatek>
+				<dodatek> Nawigacja GPS </dodatek>
+			</wyposazenie>
+			<cena jednostka="PLN"> 100.00 </cena>
+		</samochod>	
+	</samochody>
+		
+	<serie>
+		<seria seriaID="S1"> Pierwsza </seria>
+		<seria seriaID="S2"> Druga </seria>
+		<seria seriaID="S3"> Trzecia </seria>
+		<seria seriaID="S4"> Czwarta </seria>
+		<seria seriaID="S5"> Piąta </seria>
+		<seria seriaID="S6"> Szósta </seria>
+		<seria seriaID="S7"> Siódma </seria>
+		<seria seriaID="S8"> Ósma </seria>
+	</serie>
+
+	<autor>
+		<imie> Jędrzej </imie>
+		<nazwisko> Kostyk </nazwisko>
+		<nr_indeksu> 242430 </nr_indeksu>
+		<data> 23.11.2022 </data>
+	</autor>
+	
+</wypozyczalnia_samochodow>
