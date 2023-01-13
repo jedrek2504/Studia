@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="wypozyczalnia_samochodow.xsl" type="text/xsl" ?>
+
+<wypozyczalnia_samochodow>
+	<samochody>
+		<samochod seriaID="S4">
+			<model> F82 </model>
+			<segment> D </segment>
+			<pojemnosc_silnika jednostka="cm^3"> 2979 </pojemnosc_silnika>
+			<uklad_cylindrow> R6 </uklad_cylindrow>
+			<srednie_spalanie jednostka="l/100km"> 7.1 </srednie_spalanie>
+			<moc_maksymalna jednostka="KM"> 500 </moc_maksymalna>
+			<maks_moment_obrotowy jednostka="Nm"> 600 </maks_moment_obrotowy>		
+			<pierwsza_rejestracja> 12.07.2017 </pierwsza_rejestracja>
+			<kolor> niebieski </kolor>
+			<cena jednostka="PLN"> 1500.00 </cena>
+		</samochod>
+		
+		<samochod seriaID="S5">
+			<model> G11 </model>
+			<segment> F </segment>
+			<pojemnosc_silnika jednostka="cm^3"> 4395 </pojemnosc_silnika>
+			<uklad_cylindrow> V8 </uklad_cylindrow>
+			<srednie_spalanie jednostka="l/100km"> 11.8 </srednie_spalanie>
+			<moc_maksymalna jednostka="KM"> 450 </moc_maksymalna>
+			<maks_moment_obrotowy jednostka="Nm"> 650 </maks_moment_obrotowy>		
+			<pierwsza_rejestracja> 22.01.2018 </pierwsza_rejestracja>
+			<kolor> czarny </kolor>
+			<cena jednostka="PLN"> 1200.00 </cena>
+		</samochod>
+		
+		<samochod seriaID="S6">
+			<model> F01 </model>
+			<segment> F </segment>
+			<pojemnosc_silnika jednostka="cm^3"> 4395 </pojemnosc_silnika>
+			<srednie_spalanie jednostka="l/100km"> 14.4 </srednie_spalanie>
+			<moc_maksymalna jednostka="KM"> 407 </moc_maksymalna>
+			<maks_moment_obrotowy jednostka="Nm"> 600 </maks_moment_obrotowy>		
+			<pierwsza_rejestracja> 28.05.2013 </pierwsza_rejestracja>
+			<kolor> bialy </kolor>
+			<cena jednostka="PLN"> 700.00 </cena>
+		</samochod>
+	</samochody>
+		
+	<serie>
+		<seria seriaID="S1"> Pierwsza </seria>
+		<seria seriaID="S2"> Druga </seria>
+		<seria seriaID="S3"> Trzecia </seria>
+		<seria seriaID="S4"> Czwarta </seria>
+		<seria seriaID="S5"> Piąta </seria>
+		<seria seriaID="S6"> Szósta </seria>
+		<seria seriaID="S7"> Siódma </seria>
+		<seria seriaID="S8"> Ósma </seria>
+	</serie>
+
+	<autor>
+		<imie> Jędrzej </imie>
+		<nazwisko> Kostyk </nazwisko>
+		<nr_indeksu> 242430 </nr_indeksu>
+		<data> 23.11.2022 </data>
+	</autor>
+	
+</wypozyczalnia_samochodow>

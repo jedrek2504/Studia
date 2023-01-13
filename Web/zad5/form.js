@@ -50,7 +50,7 @@ function handleSaveButton() {
     const blob = new Blob([serializedString], { type: "text/xml" });
     const link = document.createElement("a");
     link.href = URL.createObjectURL(blob);
-    link.download = "xml.xml";
+    link.download = "samochody.xml";
     link.click();
 }
 
@@ -82,13 +82,36 @@ function addDeleteOptions() {
         option.text = car.getAttribute('seriaID');
         modifyCarSelect.add(option);
     }
-
-
 }
 
 function addCar() {
-  validateCar();
-
+    validateCar();
+    if(isLoaded && isCarValid){
+        var newCar = fileContent.createElement("samochod");
+        var newModel = fileContent.createElement("model");
+        var newSegment = fileContent.createElement("segment");
+        var newPojemnosc = fileContent.createElement("pojemnosc_silnika");
+        var newUklad = fileContent.createElement("uklad_cylindrow");
+        var newSpalanie = fileContent.createElement("srednie_spalanie");
+        var newData = fileContent.createElement("pierwsza_rejestracja");
+        newModel.textContent = model.value;
+        newSegment.textContent = segment.value;
+        newPojemnosc.textContent = pojemnosc.value;
+        newPojemnosc.setAttribute("jednostka","cm^3");
+        newUklad.textContent = uklad.value;
+        newSpalanie.textContent = spalanie.value;
+        newSpalanie.setAttribute("jednostka","l/100km");
+        newData.textContent = data.value;
+        newCar.appendChild(newModel);
+        newCar.appendChild(newSegment);
+        newCar.appendChild(newPojemnosc);
+        newCar.appendChild(newUklad);
+        newCar.appendChild(newSpalanie);
+        newCar.appendChild(newData);
+        newCar.setAttribute("pozycja", pozycja.value);
+        newCar.setAttribute("seriaID", seriaID.value);
+        fileContent.querySelector("samochody").appendChild(newCar);
+    }
 }
 
 
@@ -100,23 +123,41 @@ function deleteCar() {
 }
 
 
-function removeOptions() {
-    const selectElements = [
-        document.getElementById('seria'),
-        document.getElementById('deleteCar'),
-        document.getElementById('modifyCar')
-    ];
-
-    for (const select of selectElements) {
-        while (select.firstChild) {
-            select.removeChild(select.firstChild);
-        }
+function removeOptions(){
+    const seriaSelect = document.getElementById('seria');
+    while (seriaSelect.length > 0) {
+        seriaSelect.remove(0);
+    }
+    const deleteCarSelect = document.getElementById('deleteCar');
+    while (deleteCarSelect.length > 0) {
+        deleteCarSelect.remove(0);
+    }
+    const modifyCarSelect = document.getElementById('modifyCar');
+    while (modifyCarSelect.length > 0) {
+        modifyCarSelect.remove(0);
     }
 }
 
 function modifyCar() {
-  validateModifyCar();
-
+    validateModifyCar();
+    if(isLoaded && isModifyCarValid){
+        var id = document.getElementById('pickCar').value;
+        var car = fileContent.querySelector('samochody').children[id-1];
+        var newModel = document.getElementById('newModel');
+        var newSegment = document.getElementById('newSegment');
+        var newPojemnosc = document.getElementById('newPojemnosc');
+        var newUklad = document.getElementById('newUklad');
+        var newSpalanie = document.getElementById('newSpalanie');
+        var newData = document.getElementById('newData');
+        var features = [newModel,newSegment,newPojemnosc,newUklad,newSpalanie,newData];
+        var i=0;
+        for(const feature of car.children){
+            if(features[i].value != '00' && features[i].value !=''){
+                feature.textContent = features[i].value;
+            }
+            i++;
+        }
+    }
 }
 
 
@@ -130,31 +171,31 @@ function validateCar() {
     warning4.innerHTML = "";
 
     // Validate the input fields
-    if (seria === "") {
+    if (seria.value == "") {
         warning1.innerHTML = "Please select a series";
         isCarValid = false;
     }
-    if (segment === "") {
+    if (segment.value == "") {
         warning2.innerHTML = "Please select a segment";
         isCarValid = false;
     }
-    if (model === "") {
+    if (model.value == "") {
         warning3.innerHTML = "Please enter a model name";
         isCarValid = false;
     }
-    if (pojemnosc === "" || isNaN(pojemnosc)) {
+    if (pojemnosc.value == "" || isNaN(pojemnosc.value)) {
         warning4.innerHTML = "Please enter a valid capacity";
         isCarValid = false;
     }
-    if (uklad === "") {
+    if (uklad.value == "") {
         warning5.innerHTML = "Please enter a layout";
         isCarValid = false;
     }
-    if (spalanie === "" || isNaN(spalanie)) {
+    if (spalanie.value == "" || isNaN(spalanie)) {
         warning6.innerHTML = "Please enter a valid fuel consumption";
         isCarValid = false;
     }
-    if (data === "") {
+    if (data.value == "") {
         warning7.innerHTML = "Please select a registration date";
         isCarValid = false;
     }

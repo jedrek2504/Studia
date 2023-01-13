@@ -22,6 +22,12 @@
                 <div id="warning2"></div>
                 <div id="warning3"></div>
                 <div id="warning4"></div>
+                <label>Nazwa modelu <input type="text" name="model" id="model"></label>
+                <label>Segment <input type="text" name="segment" id="segment"></label>
+                <label>Moc <input type="text" name="moc" id="moc"></label>
+                <label>Spalanie <input type="text" name="spalanie" id='spalanie'></label>
+                <label>Pierwsza rejestracja <input type="date" name="data" id='data'></label>
+                <label>Kolor <input type="text" name="kolor" id='kolor'></label>
                 <label>
                     <label for="seria">Seria </label>
                     <select id="seria">
@@ -35,28 +41,12 @@
                         <option value="S8">S8</option>
                     </select>
                 </label>
-                <label>
-                    <label for="segment">Segment </label>
-                    <select id="segment">
-                        <option value="A">A</option>
-                        <option value="B">B</option>
-                        <option value="C">C</option>
-                        <option value="D">D</option>
-                        <option value="E">E</option>
-                        <option value="F">F</option>
-                    </select>
-                </label>
-                <label>Nazwa modelu <input type="text" name="model" id="model"></label>
-                <label>Pojemność <input type="text" name="pojemnosc" id="pojemnosc"></label>
-                <label>Układ <input type="text" name="uklad" id="uklad"></label>
-                <label>Spalanie <input type="text" name="spalanie" id='spalanie'></label>
-                <label>Pierwsza rejestracja <input type="date" name="data" id='data'></label>
                 <button type="button" name="addButton">Add</button>
             </div>
 
             <div class="function">
                 <div class="t">Usuń element</div>
-                <div id='usunModel' class="form">
+                <div id='usunZwierze' class="form">
                     <h3>Usun samochód</h3>
                     <label for="deleteCar">Model
                         <select id="deleteCar">
@@ -78,8 +68,14 @@
                         <select id="pickCar">
                         </select>
                     </label>
+                    <label>Nazwa modelu <input type="text" name="model" id="nowyModel"></label>
+                    <label>Segment <input type="text" name="segment" id="nowySegment"></label>
+                    <label>Moc <input type="text" name="moc" id="nowaMoc"></label>
+                    <label>Spalanie <input type="text" name="spalanie" id='noweSpalanie'></label>
+                    <label>Pierwsza rejestracja <input type="date" name="data" id='nowaData'></label>
+                    <label>Kolor <input type="text" name="kolor" id='nowyKolor'></label>
                     <label>
-                        <label for="nowaSeria">Seria </label>
+                        <label for="seria">Seria </label>
                         <select id="nowaSeria">
                             <option value="S1">S1</option>
                             <option value="S2">S2</option>
@@ -91,21 +87,6 @@
                             <option value="S8">S8</option>
                         </select>
                     </label>
-                    <label>
-                        <label for="nowySegment">Segment </label>
-                        <select id="nowySegment">
-                            <option value="A">A</option>
-                            <option value="B">B</option>
-                            <option value="C">C</option>
-                            <option value="D">D</option>
-                            <option value="E">E</option>
-                            <option value="F">F</option>
-                        </select>
-                    </label>
-                    <label>Pojemność <input type="text" name="pojemnosc" id="nowaPojemnosc"></label>
-                    <label>Układ <input type="text" name="uklad" id="nowyUklad"></label>
-                    <label>Spalanie <input type="text" name="spalanie" id='noweSpalanie'></label>
-                    <label>Pierwsza rejestracja <input type="date" name="data" id='nowaData'></label>
                     <button type="button" name="modifyCarButton" id="modifyCarButton">Change</button>
                 </div>
             </div>
