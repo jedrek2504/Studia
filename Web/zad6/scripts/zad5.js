@@ -27,7 +27,6 @@ var isCarValid = false;
 var isModifyCarValid = false;
 const pozycja = 3;
 
-//git
 function loadFile() {
     const [file] = fileInput.files;
 
@@ -43,7 +42,6 @@ function loadFile() {
     isLoaded = true;
 }
 
-//git
 function handleSaveButton() {
     if (fileContent === null) {
         return alert("Nie wczytano pliku XML.");
@@ -59,7 +57,6 @@ function handleSaveButton() {
     link.click();
 }
 
-//wstepnie git ale raczje trzeba dopisac
 function removeOptions(){
     const select1 = document.getElementById('deleteCar');
     const select2 = document.getElementById('pickCar');
@@ -73,7 +70,6 @@ function removeOptions(){
 
 }
 
-//wstepnie git ale raczje trzeba dopisac
 function addDeleteOptions() {
     removeOptions();
 
@@ -159,7 +155,6 @@ function modifyCar() {
     }
 }
 
-// git w chuj
 function validateCar() {
     isCarValid = true;
 
@@ -215,7 +210,6 @@ function validateCar() {
     }
 }
 
-//git w chuj
 function validateModifyCar() {
     isModifyCarValid = true;
 
