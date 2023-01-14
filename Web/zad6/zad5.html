@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="utf-8"/>
+    <link rel="stylesheet" href="styles/style-zad5.css"/>
+    <title>Formularz</title>
+</head>
+<body>
+<div id="container">
+    <div id="header">Formularz do edycji XML</div>
+    <div id="content">
+        <label id="inputLabel">
+            Wybierz plik XML<input type="file" name="fileInput" id="plik" type="text/xml">
+        </label>
+        <button id="loadButton">Load</button>
+
+        <div class="function">
+            <div class="t">Dodaj element</div>
+            <div id="samochod" class="form">
+                <h3>Dodaj samochód</h3>
+                <div id="warning1"></div>
+                <div id="warning2"></div>
+                <div id="warning3"></div>
+                <div id="warning4"></div>
+                <div id="warning5"></div>
+                <label>Nazwa modelu <input type="text" name="model" id="model"></label>
+                <label>Segment <input type="text" name="segment" id="segment"></label>
+                <label>Moc <input type="text" name="moc" id="moc"></label>
+                <label>Spalanie <input type="text" name="spalanie" id='spalanie'></label>
+                <label>Pierwsza rejestracja <input type="date" name="data" id='data'></label>
+                <label>
+                    <label for="seria">Seria </label>
+                    <select id="seria">
+                        <option value="S1">S1</option>
+                        <option value="S2">S2</option>
+                        <option value="S3">S3</option>
+                        <option value="S4">S4</option>
+                        <option value="S5">S5</option>
+                        <option value="S6">S6</option>
+                        <option value="S7">S7</option>
+                        <option value="S8">S8</option>
+                    </select>
+                </label>
+                <label>Cena <input type="text" name="cena" id='cena'></label>
+                <button type="button" name="addButton">Add</button>
+            </div>
+
+            <div class="function">
+                <div class="t">Usuń element</div>
+                <div id='usunSamochod' class="form">
+                    <h3>Usun samochód</h3>
+                    <label for="deleteCar">Model
+                        <select id="deleteCar">
+                        </select>
+                    </label>
+                    <button type="button" name="deleteButton" id="deleteCarButton">Delete</button>
+                </div>
+            </div>
+
+            <div class="function">
+                <div class="t">Modyfikuj element</div>
+                <div id="modyfikujSamochod" class="form">
+                    <h3>Modyfikuj samochód</h3>
+                    <div id="warning6"></div>
+                    <div id="warning7"></div>
+                    <div id="warning8"></div>
+                    <div id="warning9"></div>
+                    <div id="warning10"></div>
+                    <label for="pickCar">Samochód do edycji
+                        <select id="pickCar">
+                        </select>
+                    </label>
+                    <label>Nazwa modelu <input type="text" name="model" id="nowyModel"></label>
+                    <label>Segment <input type="text" name="segment" id="nowySegment"></label>
+                    <label>Moc <input type="text" name="moc" id="nowaMoc"></label>
+                    <label>Spalanie <input type="text" name="spalanie" id='noweSpalanie'></label>
+                    <label>Pierwsza rejestracja <input type="date" name="data" id='nowaData'></label>
+                    <label>Cena <input type="text" name="cena" id='nowyCena'></label>
+                    <label>
+                        <label for="seria">Seria </label>
+                        <select id="nowaSeria">
+                            <option value="S1">S1</option>
+                            <option value="S2">S2</option>
+                            <option value="S3">S3</option>
+                            <option value="S4">S4</option>
+                            <option value="S5">S5</option>
+                            <option value="S6">S6</option>
+                            <option value="S7">S7</option>
+                            <option value="S8">S8</option>
+                        </select>
+                    </label>
+                    <button type="button" name="modifyCarButton" id="modifyCarButton">Change</button>
+                </div>
+            </div>
+
+            <button id="saveButton">Zapisz</button>
+
+        </div>
+    </div>
+    <script src="scripts/zad5.js"></script>
+</div>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!ELEMENT firma (samochody, serie, autor)*>
+
+<!ELEMENT samochody (samochod+)>
+<!ELEMENT samochod (model?, dane_techniczne+, pierwsza_rejestracja?, kolor, 
+wyposazenie, cena)*>
+<!ATTLIST samochod seriaID IDREF #REQUIRED>
+<!ATTLIST samochod pozycja ID #REQUIRED>
+
+
+<!ELEMENT model (#PCDATA)>
+
+<!ELEMENT dane_techniczne (segment,pojemnosc_silnika,uklad_cylindrow,srednie_spalanie,moc_maksymalna,maks_moment_obrotowy)?>
+<!ELEMENT segment (#PCDATA)>
+<!ELEMENT pojemnosc_silnika (#PCDATA)>
+<!ATTLIST pojemnosc_silnika jednostka CDATA #FIXED "cm^3">
+<!ELEMENT uklad_cylindrow (#PCDATA)>
+<!ELEMENT srednie_spalanie (#PCDATA)>
+<!ATTLIST srednie_spalanie jednostka CDATA #FIXED "l/100km">
+<!ELEMENT moc_maksymalna (#PCDATA)>
+<!ATTLIST moc_maksymalna jednostka CDATA #FIXED "KM">
+<!ELEMENT maks_moment_obrotowy (#PCDATA)>
+<!ATTLIST maks_moment_obrotowy jednostka CDATA #FIXED "Nm">
+
+<!ELEMENT pierwsza_rejestracja (#PCDATA)>
+<!ELEMENT kolor (#PCDATA)>
+<!ELEMENT wyposazenie (dodatek)*>
+<!ELEMENT dodatek (#PCDATA)>
+<!ELEMENT cena (#PCDATA)>
+<!ATTLIST cena jednostka NMTOKEN #FIXED "PLN">
+
+
+<!ELEMENT serie (seria+)>
+<!ELEMENT seria (#PCDATA)>
+<!ATTLIST seria seriaID ID #REQUIRED> 
+
+<!ELEMENT autor (imie|nazwisko|nr_indeksu|data)*>
+<!ELEMENT imie (#PCDATA)>
+<!ELEMENT nazwisko (#PCDATA)>
+<!ELEMENT nr_indeksu (#PCDATA)>
+<!ELEMENT data (#PCDATA)>

@@ -1,0 +1,24 @@
+<html>
+<head>
+  <title>Jumping Square Game</title>
+  <link rel="stylesheet" href="styles/style-game.css">
+</head>
+<body>
+<div id="gameOver">
+  <p>Game Over</p>
+  <div id="finalScore">0</div>
+  <button id="playAgain">Play Again</button>
+</div>
+<div id="mainMenu">
+  <h1>Jumping Square</h1>
+  <button id="startGame">Start Game</button>
+  <div id="author">by Jedrzej Kostyk</div>
+</div>
+<div id="score">0</div>
+<canvas id="gameCanvas"></canvas>
+<audio src="sounds/jump-sound.wav" id="jumpSound"></audio>
+<audio src="sounds/collision-sound.mp3" id="collisionSound"></audio>
+<audio src="sounds/main-menu-sound.mp3" id="mainMenuSound"></audio>
+<script src="scripts/game.js"></script>
+</body>
+</html>
