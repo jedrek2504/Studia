@@ -1,38 +1,20 @@
-/* General styles */
+header {
+    text-align: center;
+    padding: 20px;
+}
+
+header h1 {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 700;
+    color: #e58800;
+}
 
 body {
     font-family: 'Lato', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f2f2f2;
+    background-color: #2D2D2D;
 }
-
-/* Navigation styles */
-
-.navigation {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    height: 50px;
-    background-color: #333;
-    color: #fff;
-}
-
-.button-nav {
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 500;
-    background-color: transparent;
-    border: none;
-    color: #fff;
-    cursor: pointer;
-    transition: background-color 0.2s ease-in-out;
-}
-
-.button-nav:hover {
-    background-color: #555;
-}
-
-/* Tasks grid styles */
 
 .tasks-grid {
     display: flex;
@@ -50,7 +32,7 @@ body {
 .task {
     width: 300px;
     height: 300px;
-    background-color: #fff;
+    background-color: #5E5DF0;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
     text-decoration: none;
     color: #333;
@@ -75,8 +57,6 @@ body {
     padding: 20px;
 }
 
-/* Task descriptions styles */
-
 .desc {
     display: flex;
     justify-content: center;
@@ -87,8 +67,8 @@ body {
 .box {
     width: 300px;
     height: 200px;
-    background-color: #fff;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+    background-color: #1B1B1B;
+    box-shadow: 0px 0px 10px rgb(229, 136, 0);
     margin: 0 10px;
     border-radius: 10px;
     position: relative;
@@ -112,10 +92,8 @@ body {
     text-overflow: ellipsis;
 }
 
-/* Footer styles */
-
 footer {
-    background: #333;
+    background: #2D2D2D;
     color: #fff;
     padding: 20px;
     text-align: center;
@@ -131,7 +109,6 @@ footer {
         transform: translateY(0%);
     }
 }
-
 
 footer p {
     font-family: 'Montserrat', sans-serif;
