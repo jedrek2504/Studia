@@ -1,0 +1,157 @@
+ *
+{
+	display: block;
+	list-style: none;
+}
+
+samochody:before
+{
+	content: "Wypożyczalnia samochodów, dostępne modele:";
+	font-size: 60px;
+	color: black;
+}
+
+samochody
+{
+	display: block;
+	color: lightblue;
+	margin-top: 2%;
+	margin-left: 5%;
+	margin-right: 5%;
+}
+
+
+samochody > samochod{
+	display: block;
+	background-color: black;
+	border: 2px solid blue;
+	padding-bottom: 20px;
+	padding-top: 20px;	
+}
+samochody > samochod:hover{
+	background-color: white;
+	cursor: pointer;
+	color: black;
+}
+
+samochod
+{
+	display: block;
+}
+
+model
+{
+	font-size: 50px;
+	letter-spacing: 1px;
+	color: royalblue;
+	display: list-item;
+	list-style: none;
+	padding-left: 70px;
+}
+
+
+model:before
+{
+	content: "Model:";
+}
+
+dane_techniczne > segment:before
+{
+	content: "Segment: ";
+}
+
+dane_techniczne > pojemnosc_silnika:before
+{
+	content: "Pojemność silnika (" attr(jednostka) "): ";
+}
+
+dane_techniczne > uklad_cylindrow:before
+{
+	content: "Układ cylindrów: ";
+}
+
+dane_techniczne > srednie_spalanie:before 
+{
+    content: "Średnie spalanie (" attr(jednostka) "): ";
+}
+
+dane_techniczne > srednie_spalanie
+{
+    color: red;
+}
+
+dane_techniczne > moc_maksymalna:before
+{
+	content: "Maksymalna moc (" attr(jednostka) "): ";
+}
+
+dane_techniczne > maks_moment_obrotowy:before
+{
+	content: "Maksymalny moment obrotowy (" attr(jednostka) "): ";
+}
+
+pierwsza_rejestracja:before
+{
+	content: "Pierwsza rejestracja: "
+}
+
+kolor:before
+{
+	content: "Kolor pojazdu: ";
+}
+
+wyposazenie:before
+{
+	margin-left: -100px;
+	content: "Wyposażenie: "
+}
+
+wyposazenie
+{
+	margin-left: 100px;
+}
+
+cena:before
+{
+	content: "Cena wypożyczenia: "; 
+}
+
+cena:after
+{
+	content:" PLN/h";
+}
+
+serie:before
+{
+	font-size: 100px;
+	display: block;
+	background-color: gray;
+	content: "Dostępne serie samochodów: ";
+}
+
+serie
+{
+	background-color: gray;
+	font-size: 50px;
+}
+
+seria
+{
+	display: list-item;
+      list-style-position: inside;
+	list-style: none;
+}
+
+
+autor:before
+{
+	
+	content: "Autor:";
+}
+
+autor
+{
+	text-align: left;
+	background-color: gray;
+}
+
