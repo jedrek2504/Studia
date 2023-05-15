@@ -5,8 +5,12 @@ import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.*;
 import javafx.scene.text.Text;
+import javafx.stage.FileChooser;
 
+import javax.swing.text.Utilities;
+import java.io.*;
 import java.math.BigInteger;
+import java.nio.Buffer;
 import java.util.HexFormat;
 
 public class DsaWindowController {
@@ -28,7 +32,7 @@ public class DsaWindowController {
     public Text saveSignedTextPath;
     public Text chooseFile2PathText;
     public Button chooseFileButton2;
-    public Button saveSignatureButton;
+    public Button saveTextButton;
     public Button saveSignedTextButton;
     public TextField DsaGeneratedKeyField;
     public TextField DsaGeneratedKeyField2;
@@ -41,31 +45,21 @@ public class DsaWindowController {
 
     DSA dsa;
 
-    BigInteger[] signature;
+    BigInteger [] signature = new BigInteger[2];
     private byte[] message;
 
-    private String bytesToHexString(byte[] bytes) {
-        return HexFormat.of().formatHex(bytes);
-    }
-
-    private byte[] hexStringToBytes(String data) {
-        return HexFormat.of().parseHex(data);
-    }
-
-    public byte[] concatByteArrays(byte[] a, byte[] b) {
-        byte[] result = new byte[a.length + b.length];
-        System.arraycopy(a, 0, result, 0, a.length);
-        System.arraycopy(b, 0, result, a.length, b.length);
-        return result;
-    }
-
-    public DsaWindowController() {
+    @FXML
+    public void initialize() {
         dsa = new DSA();
+        // Set the default state of the toggle buttons
+        toggleButtonWindow.setSelected(true);
+        toggleButtonFile.setSelected(false);
+        hideFileNodes();
     }
 
     public void generateKeysButtonAction(ActionEvent actionEvent) {
         dsa.generateKey();
-        DsaGeneratedKeyField.setText(dsa.q.toString(16) + " " + dsa.g.toString(16));
+        DsaGeneratedKeyField.setText(dsa.q.toString(16) + dsa.g.toString(16));
         DsaGeneratedKeyField2.setText(dsa.y.toString(16));
         DsaGeneratedKeyField3.setText(dsa.x.toString(16));
         DsaGeneratedKeyField4.setText(dsa.p.toString(16));
@@ -73,25 +67,16 @@ public class DsaWindowController {
 
     @FXML
     private void signButtonAction(ActionEvent event) {
-        BigInteger[] signature = dsa.sign(DsaInputTextArea.getText().getBytes());
-        String pom=bytesToHexString(signature[0].toByteArray());
-        pom+="\n";
-        pom+=bytesToHexString(signature[1].toByteArray());
-
-        DsaOutputTextArea.setText(pom);
+        if(message == null) {
+            message = DsaInputTextArea.getText().getBytes();
+        }
+        signature = dsa.sign(message);
+        DsaOutputTextArea.setText(signature[0].toString(16) + "\n" + signature[1].toString(16));
     }
 
 
     @FXML
     public void verifyButtonAction(ActionEvent actionEvent) {
-        String plaintext = DsaInputTextArea.getText();
-        byte[] message = plaintext.getBytes();
-        String signatureString = DsaOutputTextArea.getText();
-        String[] tab =signatureString.split("\n");
-        BigInteger[] signature = new BigInteger[2];
-        signature[0] = new BigInteger(1,hexStringToBytes(tab[0]));
-        signature[1] = new BigInteger(1,hexStringToBytes(tab[1]));
-
         boolean isVerified = dsa.verify(message, signature);
         if (isVerified) {
             Alert alert = new Alert(Alert.AlertType.INFORMATION);
@@ -124,6 +109,7 @@ public class DsaWindowController {
         chooseFileButton2.setVisible(true);
     }
 
+    @FXML
     public void toggleButtonAction(ActionEvent actionEvent) {
         // Handle toggle button events
         if (actionEvent.getSource() == toggleButtonWindow) {
@@ -135,22 +121,258 @@ public class DsaWindowController {
 
 
     public void chooseFileButtonAction(ActionEvent actionEvent) {
-        
+        FileChooser fileChooser = new FileChooser();
+
+        // Set the initial directory for the FileChooser
+        fileChooser.setInitialDirectory(new File(System.getProperty("user.home")));
+
+        File selectedFile = fileChooser.showOpenDialog(null);
+
+        if (selectedFile != null) {
+            String filePath = selectedFile.getAbsolutePath();
+            if (actionEvent.getSource().equals(chooseFileButton1)) {
+                try {
+                    FileInputStream inputStream = new FileInputStream(selectedFile);
+                    chooseFile1PathText.setText(filePath);
+                    message = inputStream.readAllBytes();
+                    inputStream.close();
+
+                    byte[] tmpArray = new byte[1000];
+
+                    if (message != null) {
+                        // copy the first 3000 bytes from the original array to the tmp array
+                        System.arraycopy(message, 0, tmpArray, 0, 1000);
+                        DsaInputTextArea.setText(new String(tmpArray));
+                    }
+
+                    // Display a success message
+                    Alert alert = new Alert(Alert.AlertType.INFORMATION);
+                    alert.setTitle("File loaded");
+                    alert.setHeaderText(null);
+                    alert.setContentText("The file has been loaded.");
+                } catch (IOException e) { // If there was an error loading the file
+                    e.printStackTrace();
+
+                    // Display an error message
+                    Alert alert = new Alert(Alert.AlertType.ERROR);
+                    alert.setTitle("Error");
+                    alert.setHeaderText("Error loading file");
+                    alert.setContentText("There was an error loading the file.");
+                    alert.showAndWait();
+                }
+            } else if (actionEvent.getSource().equals(chooseFileButton2)) {
+
+                try {
+                    FileInputStream inputStream = new FileInputStream(selectedFile);
+                    BufferedReader reader = new BufferedReader(new InputStreamReader(inputStream));
+                    String rString = reader.readLine();
+                    String sString = reader.readLine();
+                    BigInteger r = new BigInteger(rString);
+                    BigInteger s = new BigInteger(sString);
+                    signature[0] = r;
+                    signature[1] = s;
+                    reader.close();
+                    inputStream.close();
+                    DsaOutputTextArea.setText(signature[0].toString(16)+"\n"+signature[1].toString(16));
+
+                    // Display a success message
+                    Alert alert = new Alert(Alert.AlertType.INFORMATION);
+                    alert.setTitle("File loaded");
+                    alert.setHeaderText(null);
+                    alert.setContentText("The file has been loaded.");
+                } catch (IOException e) { // If there was an error loading the file
+                    e.printStackTrace();
+
+                    // Display an error message
+                    Alert alert = new Alert(Alert.AlertType.ERROR);
+                    alert.setTitle("Error");
+                    alert.setHeaderText("Error loading signature");
+                    alert.setContentText("There was an error loading the signature.");
+                    alert.showAndWait();
+                }
+            }
+        }
     }
 
     public void loadKeysFromFile(ActionEvent actionEvent) {
+        // Create a new FileChooser
+        FileChooser fileChooser = new FileChooser();
 
+        // Set the initial directory for the FileChooser
+        fileChooser.setInitialDirectory(new File(System.getProperty("user.home")));
+
+        // Set the extension filter for the FileChooser
+        FileChooser.ExtensionFilter extFilter = new FileChooser.ExtensionFilter("MyKey files (*.key)", "*.key");
+        fileChooser.getExtensionFilters().add(extFilter);
+
+        // Show the Open dialog and get the selected file
+        File file = fileChooser.showOpenDialog(null);
+
+        if (file != null) { // If a file was selected
+            try {
+                FileInputStream inputStream = new FileInputStream(file);
+                BufferedReader reader = new BufferedReader(new InputStreamReader(inputStream));
+                String qStr = reader.readLine();
+                String gStr = reader.readLine();
+                String yStr = reader.readLine();
+                String xStr = reader.readLine();
+                String pStr = reader.readLine();
+
+                dsa.q = new BigInteger(qStr);
+                dsa.g = new BigInteger(gStr);
+                dsa.y = new BigInteger(yStr);
+                dsa.x = new BigInteger(xStr);
+                dsa.p = new BigInteger(pStr);
+
+                DsaGeneratedKeyField.setText(dsa.q.toString(16) + dsa.g.toString(16));
+                DsaGeneratedKeyField2.setText(dsa.y.toString(16));
+                DsaGeneratedKeyField3.setText(dsa.x.toString(16));
+                DsaGeneratedKeyField4.setText(dsa.p.toString(16));
+
+                // Display a success message
+                Alert alert = new Alert(Alert.AlertType.INFORMATION);
+                alert.setTitle("Key loaded");
+                alert.setHeaderText(null);
+                alert.setContentText("The key has been loaded.");
+                alert.showAndWait();
+            } catch (IOException e) { // If there was an error loading the file
+                e.printStackTrace();
+
+                // Display an error message
+                Alert alert = new Alert(Alert.AlertType.ERROR);
+                alert.setTitle("Error");
+                alert.setHeaderText("Error loading key");
+                alert.setContentText("There was an error loading the key.");
+                alert.showAndWait();
+            }
+        }
     }
 
 
     public void saveKeysToFile() {
+        // Create a new instance of FileChooser
+        FileChooser fileChooser = new FileChooser();
 
+        // Set the initial directory for the FileChooser
+        fileChooser.setInitialDirectory(new File(System.getProperty("user.home")));
+
+        // Set the title for the FileChooser window
+        fileChooser.setTitle("Save Key File");
+
+        // Set the extension filter for the FileChooser
+        FileChooser.ExtensionFilter extFilter = new FileChooser.ExtensionFilter("Key files (*.key)", "*.key");
+        fileChooser.getExtensionFilters().add(extFilter);
+
+        // Show the Save File Dialog
+        File file = fileChooser.showSaveDialog(saveKeysButton.getScene().getWindow());
+
+        if (file != null) {
+            try {
+                FileOutputStream outputStream = new FileOutputStream(file);
+                DataOutputStream dataOutput = new DataOutputStream(outputStream);
+                dataOutput.writeBytes(dsa.q.toString() + "\n" + dsa.g.toString() + "\n" + dsa.y.toString() + "\n" + dsa.x.toString() + "\n" + dsa.p.toString()+ "\n");
+                dataOutput.close();
+                outputStream.close();
+
+                // Display a success message
+                Alert alert = new Alert(Alert.AlertType.INFORMATION);
+                alert.setTitle("Key saved");
+                alert.setHeaderText(null);
+                alert.setContentText("The key has been saved.");
+                alert.showAndWait();
+            } catch (IOException e) { // If there was an error saving the file
+                e.printStackTrace();
+
+                // Display an error message
+                Alert alert = new Alert(Alert.AlertType.ERROR);
+                alert.setTitle("Error");
+                alert.setHeaderText("Error saving key");
+                alert.setContentText("There was an error saving the key.");
+                alert.showAndWait();
+            }
+        }
     }
 
+    @FXML
+    public void saveTextButtonAction(ActionEvent actionEvent) {
+        // Create a new instance of FileChooser
+        FileChooser fileChooser = new FileChooser();
 
-    public void saveSignatureButtonAction(ActionEvent actionEvent) {
+        // Set the initial directory for the FileChooser
+        fileChooser.setInitialDirectory(new File(System.getProperty("user.home")));
+
+        // Set the title for the FileChooser window
+        fileChooser.setTitle("Save Input Text File");
+
+        // Show the Save File Dialog
+        File file = fileChooser.showSaveDialog(saveTextButton.getScene().getWindow());
+
+        if (file != null) {
+            try {
+                FileOutputStream outputStream = new FileOutputStream(file);
+                outputStream.write(message);
+                outputStream.close();
+
+                // Display the path to the saved file in the saveCipherFilePath label
+                saveSignaturePath.setText(file.getAbsolutePath());
+
+                Alert alert = new Alert(Alert.AlertType.INFORMATION);
+                alert.setTitle("File saved");
+                alert.setHeaderText(null);
+                alert.setContentText("The file has been saved.");
+                alert.showAndWait();
+            } catch (IOException e) {
+                e.printStackTrace();
+                // Display an error message if there was a problem saving the file
+                Alert alert = new Alert(Alert.AlertType.ERROR);
+                alert.setTitle("Error");
+                alert.setHeaderText("Error saving file");
+                alert.setContentText("There was an error saving the file.");
+                alert.showAndWait();
+            }
+        }
     }
-
+    @FXML
     public void saveSignedTextButtonAction(ActionEvent actionEvent) {
+        // Create a new instance of FileChooser
+        FileChooser fileChooser = new FileChooser();
+
+        // Set the initial directory for the FileChooser
+        fileChooser.setInitialDirectory(new File(System.getProperty("user.home")));
+
+        // Set the title for the FileChooser window
+        fileChooser.setTitle("Save Input Text File");
+
+        // Show the Save File Dialog
+        File file = fileChooser.showSaveDialog(saveTextButton.getScene().getWindow());
+
+        if (file != null) {
+            try {
+                FileOutputStream outputStream = new FileOutputStream(file);
+                DataOutputStream dataOutput = new DataOutputStream(outputStream);
+
+                dataOutput.writeBytes(signature[0].toString() + "\n" + signature[1].toString() + "\n");
+
+                dataOutput.close();
+                outputStream.close();
+
+                // Display the path to the saved file in the saveCipherFilePath label
+                saveSignaturePath.setText(file.getAbsolutePath());
+
+                Alert alert = new Alert(Alert.AlertType.INFORMATION);
+                alert.setTitle("File saved");
+                alert.setHeaderText(null);
+                alert.setContentText("The file has been saved.");
+                alert.showAndWait();
+            } catch (IOException e) {
+                e.printStackTrace();
+                // Display an error message if there was a problem saving the file
+                Alert alert = new Alert(Alert.AlertType.ERROR);
+                alert.setTitle("Error");
+                alert.setHeaderText("Error saving file");
+                alert.setContentText("There was an error saving the file.");
+                alert.showAndWait();
+            }
+        }
     }
 }

@@ -14,15 +14,13 @@ public class DSA {
         ;
     }
 
-
     BigInteger p, q, h, g, x, y, k, r, s, w, u1, u2, v, pm1, km1;
     MessageDigest digest;
-    int keyLen = 512; //ta wartość daje długość p=512
+    int keyLen = 512;
     int ilZnHex = keyLen / 4;//ilość znaków hex wyświetlanych w polu klucza
     Random random = new Random();
 
     public DSA() {
-        generateKey();
         try {
             digest = MessageDigest.getInstance("SHA-256");
         } catch (NoSuchAlgorithmException ex) {
@@ -30,9 +28,9 @@ public class DSA {
         }
     }
 
-    public void generateKey() {   //tworzymy losową liczbę bitów dla p
+    public void generateKey() {
+        //todo
         int rand = 512 + (int) random.nextFloat() * 512;
-        //następnie musimy ją dobić tak aby była wielokrotnością 64
         while (true)
             if (rand % 64 == 0) break;
             else rand++;
@@ -83,4 +81,4 @@ public class DSA {
         return v.compareTo(podpis[0]) == 0;
     }
 
-}//klasa RSA
+}
