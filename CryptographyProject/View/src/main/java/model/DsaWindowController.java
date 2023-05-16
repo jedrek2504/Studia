@@ -47,6 +47,7 @@ public class DsaWindowController {
 
     BigInteger [] signature = new BigInteger[2];
     private byte[] message;
+    boolean isWindow = false;
 
     @FXML
     public void initialize() {
@@ -55,6 +56,7 @@ public class DsaWindowController {
         toggleButtonWindow.setSelected(true);
         toggleButtonFile.setSelected(false);
         hideFileNodes();
+        isWindow = true;
     }
 
     public void generateKeysButtonAction(ActionEvent actionEvent) {
@@ -77,6 +79,9 @@ public class DsaWindowController {
 
     @FXML
     public void verifyButtonAction(ActionEvent actionEvent) {
+        if(isWindow) {
+            message = DsaInputTextArea.getText().getBytes();
+        }
         boolean isVerified = dsa.verify(message, signature);
         if (isVerified) {
             Alert alert = new Alert(Alert.AlertType.INFORMATION);
@@ -114,8 +119,10 @@ public class DsaWindowController {
         // Handle toggle button events
         if (actionEvent.getSource() == toggleButtonWindow) {
             hideFileNodes();
+            isWindow = true;
         } else if (actionEvent.getSource() == toggleButtonFile) {
             showFileNodes();
+            isWindow = false;
         }
     }
 
