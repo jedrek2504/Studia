@@ -15,6 +15,9 @@ boolean Forward, Backward, Up, Down, Left, Right, RXp, RXm, RYp, RYm, RZp, RZm, 
 float rotX = -3.2;  // X rotation angle
 float rotY, rotZ;  // Y and Z rotation angles
 
+float rotation = 0.0f;
+float rotationAngle;
+
 void setup() {
   noStroke();
   fullScreen(P3D);  // Set up a full-screen P3D rendering
@@ -26,6 +29,11 @@ void setup() {
 void draw() {
   background(0);
   lights();
+
+  rotationAngle=time * 0.01f * pspeed;
+  rotation += 0.01f * pspeed;
+  rotationAngle = rotation;
+  
 
   // Render the sun
   pushMatrix();
@@ -106,13 +114,16 @@ void draw() {
 
   popMatrix();
 
+  
+
   // Render p4
   pushMatrix();
-  rotateY(time * pspeed);
+  rotateY(rotationAngle);  // Używamy tymczasowej wartości prędkości
   translate(0, 0, 500.f);
   specular(#9C2E35);
   fill(#9C2E35);
   sphere(30);
+
 
   // Render m5
   pushMatrix();
